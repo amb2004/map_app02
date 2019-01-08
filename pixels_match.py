@@ -228,7 +228,7 @@ def ocr(image,path_main):
 #        im.save('temp2.jpg')
         # load the image as a PIL/Pillow image, apply OCR, and then delete
         # the temporary file
-        pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files (x86)\Tesseract-OCR\tesseract.exe'
+   #     pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files (x86)\Tesseract-OCR\tesseract.exe'
         tessdata_dir_config = '--oem 3 --psm 11  --tessdata-dir "C://Program Files (x86)//Tesseract-OCR//tessdata//"'
         
         text = pytesseract.image_to_string(Image.open(path_main+str(filename)),lang='eng', config=tessdata_dir_config)
