@@ -74,7 +74,7 @@ def check_file(app,request):
             file_200=os.path.join(app.config['UPLOAD_FOLDER'],"check_convert_200/")
             filename=file_name.replace(".pdf",".jpg")
 
-            converter_pdf(app.config['UPLOAD_FOLDER'],file_name,file_300,filename,300)
+            converter_pdf(path,file_name,file_300,filename,300)
 
             resizer_img(file_300, filename, file_200, filename, 7)
             file_name_img=file_200+filename
