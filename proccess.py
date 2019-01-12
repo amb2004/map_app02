@@ -217,7 +217,7 @@ def crop(app,request,json_info):
         proj_num=request.form['project_number']
         json_info['project_number'] = price
 
-        with open('{}/{}'.format(app.config['UPLOAD_FOLDER'],"rlogo/"+json_info['filename'].replace("jpg","json")[0]), 'w') as outfile:
+        with open('{}/{}'.format(app.config['UPLOAD_FOLDER'],"rlogo/"+json_info['filename'].replace("jpg","json")), 'w') as outfile:
             json.dump(json_info, outfile)
 
 
