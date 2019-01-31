@@ -94,7 +94,7 @@ def check_file(app,request):
 
             # try:
             # msg=process_image(app.config['UPLOAD_FOLDER'],file_name,path_dst)
-            return render_template('json_tmp.html', title=title,drawingN=drawing,revsion=revsion,msg)
+            return render_template('json_tmp.html', title=title,drawingN=drawing,revsion=revsion,msg=msg)
             # except Exception as e:
             #     print('error out put format ',e,file=sys.stdout)
             #     msg = process_image(path, file_name, path_dst)
