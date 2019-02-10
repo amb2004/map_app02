@@ -193,15 +193,17 @@ def get_rect(data_):
     y_end=y_start+int(data_['height'])
     rotate=int(data_['rotate'])
     return x_start,y_start,x_end,y_end,rotate    
-def ocr(image,path_main):
+def ocr(image,path_main,psm):
 #        path_img=path+'wline/'+'_'+name
 #        print('#######################################################')
 #        print(path_img)
-        
-        
-        
-        
-#        image = cv2.imread(path_img)
+#             path_main='G:/appdraw_v01/mab_app/static/img'
+#             path_img= path_main+'/title.jpg'
+#             path_img =path_main+'/drawing_number.jpg'
+#             path_img =path_main+'/revision.jpg'
+#
+#
+#            image = cv2.imread(path_img)
 #        name_txt=path_img.replace('.png','.txt')
         gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
          
@@ -218,7 +220,7 @@ def ocr(image,path_main):
         # write the grayscale image to disk as a temporary file so we can
         # apply OCR to it
         filename = "{}.png".format(os.getpid())
-        cv2.imwrite(path_main+str(filename), gray)
+        cv2.imwrite(path_main+'/'+str(filename), gray)
         
 #        im = Image.open(path_img) # the second one 
 #        im = im.filter(ImageFilter.MedianFilter())
@@ -229,9 +231,11 @@ def ocr(image,path_main):
         # load the image as a PIL/Pillow image, apply OCR, and then delete
         # the temporary file
    #     pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files (x86)\Tesseract-OCR\tesseract.exe'
-        tessdata_dir_config = '--oem 3 --psm 11  --tessdata-dir "C://Program Files (x86)//Tesseract-OCR//tessdata//"'
-        
-        text = pytesseract.image_to_string(Image.open(path_main+str(filename)),lang='eng', config=tessdata_dir_config)
+   #      psm=7
+        tessdata_dir_config = '--oem 3 --psm {} --tessdata-dir "C:/Program Files (x86)/Tesseract-OCR/tessdata/"'.format(psm)
+
+        text = pytesseract.image_to_string(Image.open(path_main+'/'+str(filename)),lang='eng', config=tessdata_dir_config)
+        # text
         return text
 
 def get_data(path_main,image,name0):
@@ -239,7 +243,6 @@ def get_data(path_main,image,name0):
         profile_ocr['text']=[]
         profile_ocr['text'].append({}) 
 #        name="1409-004-Key-Elevation-Bank-.json"
-
         # path_json="./static/img/rlogo/"
         path_json = os.path.join(path_main, "rlogo/")
         # path_logo="./static/img/croped_img_300/"
@@ -275,7 +278,7 @@ def get_data(path_main,image,name0):
         cv2.imwrite(path_main+'/title.jpg',img_title)
 #        imgplot = plt.imshow(img_title)
 #        plt.show()
-        title_text=ocr(img_title,path_main)
+        title_text=ocr(img_title,path_main,6)
         print('title_text=',title_text)
 
         drawingN=data['project_number']
@@ -285,7 +288,7 @@ def get_data(path_main,image,name0):
         cv2.imwrite(path_main+'/drawing_number.jpg',img_drawingN)
 
 
-        drawingN_text=ocr(img_drawingN,path_main)
+        drawingN_text=ocr(img_drawingN,path_main,6)
         print('img_drawingN=',drawingN_text)
 
 
@@ -297,7 +300,7 @@ def get_data(path_main,image,name0):
         cv2.imwrite(path_main+'/revision.jpg',img_revsion)
 
 
-        revsion_text=ocr(img_revsion,path_main)
+        revsion_text=ocr(img_revsion,path_main,8)
         print('img_revsion=',revsion_text)
 
         profile_ocr['text'][0]['Title']=title_text
