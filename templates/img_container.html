@@ -1,0 +1,6 @@
+{% for img in images %} 
+<div class="container">
+    <img class="show-popup" onclick="check(this);" id="myImg" src="static\img\croped_img\{{img}}" alt="Snow">
+    <a class="btn" onclick="del(this);"><i class="fas fa-trash-alt"></i></a>
+</div>
+{% endfor %}
