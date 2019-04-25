@@ -1,3 +1,4 @@
+
 # -*- coding: utf-8 -*-
 """
 Created on Sun Jul  8 18:27:01 2018
@@ -210,18 +211,35 @@ def ocr(image,path_main,psm):
         # check to see if we should apply thresholding to preprocess the
         # image
         #if args["preprocess"] == "thresh":
-#        gray = cv2.threshold(gray, 0, 255,cv2.THRESH_BINARY | cv2.THRESH_OTSU)[1]
+        #gray = cv2.threshold(gray, 0, 255,cv2.THRESH_BINARY | cv2.THRESH_OTSU)[1]
          
         # make a check to see if median blurring should be done to remove
         # noise
         #elif args["preprocess"] == "blur":
-#        gray = cv2.medianBlur(gray,3 )
+        #gray = cv2.medianBlur(gray,3 )
          
         # write the grayscale image to disk as a temporary file so we can
         # apply OCR to it
-        filename = "{}.png".format(os.getpid())
-        cv2.imwrite(path_main+'/'+str(filename), gray)
+#        filename = "{}.png".format(os.getpid())
+#       cv2.imwrite(path_main+'/'+str(filename), gray)
         
+
+    # Apply dilation and erosion to remove some noise
+        kernel = np.ones((2, 2), np.uint8)
+        img = cv2.dilate(gray, kernel, iterations=1)
+        img = cv2.erode(img, kernel, iterations=1)
+    # # Apply blur to smooth out the edges
+#        img = cv2.GaussianBlur(img, (5, 5), 0)
+    # # Apply threshold to get image with only b&w (binarization)
+#        img = cv2.threshold(img, 0, 255, cv2.THRESH_BINARY + cv2.THRESH_OTSU)[1]
+    # # Save the filtered image in the output directory
+        filename = "{}.png".format(os.getpid())
+        cv2.imwrite(path_main+'/'+str(filename), img)
+        tessdata_dir_config = '--oem 3 --psm {} --c tessedit_char_whitelist=01234567890ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz@ß€!$%&/()=?+-.,;:<>'.format(psm)
+
+
+
+
 #        im = Image.open(path_img) # the second one 
 #        im = im.filter(ImageFilter.MedianFilter())
 #        enhancer = ImageEnhance.Contrast(im)
@@ -232,13 +250,13 @@ def ocr(image,path_main,psm):
         # the temporary file
    #     pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files (x86)\Tesseract-OCR\tesseract.exe'
    #      psm=7
-        tessdata_dir_config = '--oem 3 --psm {} --tessdata-dir "C:/Program Files (x86)/Tesseract-OCR/tessdata/"'.format(psm)
+        #tessdata_dir_config = '--oem 3 --psm {} --tessdata-dir "C:/Program Files (x86)/Tesseract-OCR/tessdata/"'.format(psm)
 
         text = pytesseract.image_to_string(Image.open(path_main+'/'+str(filename)),lang='eng', config=tessdata_dir_config)
         # text
         return text
 
-def get_data(path_main,image,name0):
+def get_data(path_main,image,name0,ds=10):
         profile_ocr={}
         profile_ocr['text']=[]
         profile_ocr['text'].append({}) 
@@ -273,8 +291,8 @@ def get_data(path_main,image,name0):
         title = data['title']
         print('title   :',title)
         x_start,y_start,x_end,y_end,rotate=get_rect(title)        
-        img_title=cv2.rectangle(image, (int(x_start*scale_w), int(y_start*scale_h)), (int(x_end*scale_w), int(y_end*scale_h)), (0, 255, 0), 7)
-        img_title=image[int(y_start*scale_h):int(y_end*scale_h),int(x_start*scale_w):int(x_end*scale_w)]
+#        img_title=cv2.rectangle(image, (int(x_start*scale_w), int(y_start*scale_h)), (int(x_end*scale_w), int(y_end*scale_h)), (0, 255, 0), 7)
+        img_title=image[int(y_start*scale_h+ds):int(y_end*scale_h),int(x_start*scale_w):int(x_end*scale_w)]
         cv2.imwrite(path_main+'/title.jpg',img_title)
 #        imgplot = plt.imshow(img_title)
 #        plt.show()
@@ -284,11 +302,11 @@ def get_data(path_main,image,name0):
         drawingN=data['project_number']
         x_start,y_start,x_end,y_end,rotate=get_rect(drawingN)
 #        img_drawingN=cv2.rectangle(img_rgb, (x_start*scale_w, y_start*scale_h), (x_end*scale_w, y_end*scale_h), (0, 0, 255), 2)
-        img_drawingN=image[int(y_start*scale_h):int(y_end*scale_h),int(x_start*scale_w):int(x_end*scale_w)]
+        img_drawingN=image[int(y_start*scale_h+ds):int(y_end*scale_h),int(x_start*scale_w):int(x_end*scale_w)]
         cv2.imwrite(path_main+'/drawing_number.jpg',img_drawingN)
 
 
-        drawingN_text=ocr(img_drawingN,path_main,6)
+        drawingN_text=ocr(img_drawingN,path_main,8)
         print('img_drawingN=',drawingN_text)
 
 
@@ -296,7 +314,7 @@ def get_data(path_main,image,name0):
         revsion=data['revsion']
         x_start,y_start,x_end,y_end,rotate=get_rect(revsion)        
 #        img_revsion=cv2.rectangle(img_rgb, (x_start*scale_w, y_start*scale_h), (x_end*scale_w, y_end*scale_h), (0, 0, 255), 2)
-        img_revsion=image[int(y_start*scale_h):int(y_end*scale_h),int(x_start*scale_w):int(x_end*scale_w)]
+        img_revsion=image[int(y_start*scale_h+ds):int(y_end*scale_h),int(x_start*scale_w):int(x_end*scale_w)]
         cv2.imwrite(path_main+'/revision.jpg',img_revsion)
 
 

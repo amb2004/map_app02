@@ -1,0 +1,2523 @@
+ * Serving Flask app "app2" (lazy loading)
+ * Environment: production
+   WARNING: Do not use the development server in a production environment.
+   Use a production WSGI server instead.
+ * Debug mode: on
+Traceback (most recent call last):
+  File "app2.py", line 199, in <module>
+    app.run(host="0.0.0.0", port=80,debug=True)
+  File "/usr/local/lib/python3.5/dist-packages/flask/app.py", line 943, in run
+    run_simple(host, port, self, **options)
+  File "/usr/local/lib/python3.5/dist-packages/werkzeug/serving.py", line 795, in run_simple
+    s.bind(get_sockaddr(hostname, port, address_family))
+OSError: [Errno 98] Address already in use
+ * Serving Flask app "app2" (lazy loading)
+ * Environment: production
+   WARNING: Do not use the development server in a production environment.
+   Use a production WSGI server instead.
+ * Debug mode: on
+Traceback (most recent call last):
+  File "app2.py", line 199, in <module>
+    app.run(host="0.0.0.0", port=80,debug=True)
+  File "/usr/local/lib/python3.5/dist-packages/flask/app.py", line 943, in run
+    run_simple(host, port, self, **options)
+  File "/usr/local/lib/python3.5/dist-packages/werkzeug/serving.py", line 795, in run_simple
+    s.bind(get_sockaddr(hostname, port, address_family))
+OSError: [Errno 98] Address already in use
+ * Serving Flask app "app2" (lazy loading)
+ * Environment: production
+   WARNING: Do not use the development server in a production environment.
+   Use a production WSGI server instead.
+ * Debug mode: on
+INFO:werkzeug: * Running on http://0.0.0.0:80/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 248-377-634
+INFO:werkzeug:105.108.12.173 - - [06/Mar/2019 18:25:11] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:105.108.12.173 - - [06/Mar/2019 18:25:12] "GET /static/assets/css/Header-Nightsky.css HTTP/1.1" 200 -
+INFO:werkzeug:105.108.12.173 - - [06/Mar/2019 18:25:12] "GET /static/assets/style.css HTTP/1.1" 200 -
+INFO:werkzeug:105.108.12.173 - - [06/Mar/2019 18:25:12] "GET /static/assets/css/font-awesome.min.css HTTP/1.1" 200 -
+INFO:werkzeug:105.108.12.173 - - [06/Mar/2019 18:25:13] "GET /static/assets/img/nightsky.jpg HTTP/1.1" 200 -
+INFO:werkzeug:105.108.12.173 - - [06/Mar/2019 18:25:27] "GET /display HTTP/1.1" 200 -
+INFO:werkzeug:105.108.12.173 - - [06/Mar/2019 18:25:27] "GET /favicon.ico HTTP/1.1" 404 -
+INFO:werkzeug:105.108.12.173 - - [06/Mar/2019 18:25:27] "GET /static/css/style.css HTTP/1.1" 200 -
+INFO:werkzeug:105.108.12.173 - - [06/Mar/2019 18:25:27] "GET /static/js/js.js HTTP/1.1" 200 -
+INFO:werkzeug:105.108.12.173 - - [06/Mar/2019 18:25:28] "GET /hello HTTP/1.1" 200 -
+INFO:werkzeug:105.108.12.173 - - [06/Mar/2019 18:25:28] "GET /favicon.ico HTTP/1.1" 404 -
+INFO:werkzeug:105.108.12.173 - - [06/Mar/2019 18:25:28] "GET /static/img/croped_img/1409-4200-LRW-comments-P1.jpg HTTP/1.1" 200 -
+INFO:werkzeug:105.108.12.173 - - [06/Mar/2019 18:25:28] "GET /static/img/croped_img/NL-ISS-XX-01-DR-S-12.04_PROPOSED%20FIRST%20FLOOR%20PLAN%20(3).jpg HTTP/1.1" 200 -
+INFO:werkzeug:105.108.12.173 - - [06/Mar/2019 18:25:28] "GET /static/img/croped_img/15-033(23.1)008-Structural-GA-Level-7-G.jpg HTTP/1.1" 200 -
+INFO:werkzeug:105.108.12.173 - - [06/Mar/2019 18:25:28] "GET /static/img/croped_img/2-C2.jpg HTTP/1.1" 200 -
+INFO:werkzeug:105.108.12.173 - - [06/Mar/2019 18:25:28] "GET /static/img/croped_img/ASF21828_3010-Screen-Ref-Elevation---CW07-Elevations,-Plans-Sections-&-Details-C.jpg HTTP/1.1" 200 -
+INFO:werkzeug:105.108.12.173 - - [06/Mar/2019 18:25:28] "GET /static/img/croped_img/503_Door%20schedule_C5.jpg HTTP/1.1" 200 -
+INFO:werkzeug:105.108.12.173 - - [06/Mar/2019 18:25:30] "GET /static/img/croped_img/4481-01C-D-E01-Elevation-B.jpg HTTP/1.1" 200 -
+INFO:werkzeug:105.108.12.173 - - [06/Mar/2019 18:25:31] "GET /static/img/croped_img/C60298-50-M001-Mechanical-Public-Health-Services-AFC1.jpg HTTP/1.1" 200 -
+INFO:werkzeug:105.108.12.173 - - [06/Mar/2019 18:25:31] "GET /static/img/croped_img/16774-12.jpg HTTP/1.1" 200 -
+INFO:werkzeug:105.108.12.173 - - [06/Mar/2019 18:25:32] "GET /static/img/croped_img/W7352-3-LRW-comments-A.jpg HTTP/1.1" 200 -
+INFO:werkzeug:105.108.12.173 - - [06/Mar/2019 18:25:36] "GET /static/img/croped_img/LRW-7459-L(70)19-Sign-Types-C.jpg HTTP/1.1" 200 -
+INFO:werkzeug:105.108.12.173 - - [06/Mar/2019 18:25:37] "GET /static/img/croped_img/1409-001-Key-Elevation--Acadamy-Way-P1.jpg HTTP/1.1" 200 -
+INFO:werkzeug:52.114.75.71 - - [06/Mar/2019 18:25:52] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:52.114.75.71 - - [06/Mar/2019 18:25:52] "GET /favicon.ico HTTP/1.1" 404 -
+INFO:werkzeug:105.108.12.173 - - [06/Mar/2019 18:26:04] "POST /posts HTTP/1.1" 200 -
+INFO:werkzeug:105.108.12.173 - - [06/Mar/2019 18:26:05] "GET /static/img/croped_rect/16774-12.jpg HTTP/1.1" 200 -
+INFO:werkzeug:105.108.12.173 - - [06/Mar/2019 18:26:10] "POST /posts HTTP/1.1" 200 -
+INFO:werkzeug:105.108.12.173 - - [06/Mar/2019 18:26:11] "GET /static/img/croped_rect/2-C2.jpg HTTP/1.1" 200 -
+INFO:werkzeug:105.108.12.173 - - [06/Mar/2019 18:26:13] "POST /posts HTTP/1.1" 200 -
+INFO:werkzeug:105.108.12.173 - - [06/Mar/2019 18:26:14] "GET /static/img/croped_rect/1409-001-Key-Elevation--Acadamy-Way-P1.jpg HTTP/1.1" 200 -
+INFO:werkzeug:105.108.12.173 - - [06/Mar/2019 18:26:20] "POST /posts HTTP/1.1" 200 -
+INFO:werkzeug:105.108.12.173 - - [06/Mar/2019 18:26:22] "GET /static/img/croped_rect/2-C2.jpg HTTP/1.1" 200 -
+INFO:werkzeug:105.108.12.173 - - [06/Mar/2019 18:26:27] "POST /posts HTTP/1.1" 200 -
+INFO:werkzeug:105.108.12.173 - - [06/Mar/2019 18:26:27] "GET /static/img/croped_rect/NL-ISS-XX-01-DR-S-12.04_PROPOSED%20FIRST%20FLOOR%20PLAN%20(3).jpg HTTP/1.1" 200 -
+INFO:werkzeug:105.108.12.173 - - [06/Mar/2019 18:26:31] "POST /posts HTTP/1.1" 200 -
+INFO:werkzeug:105.108.12.173 - - [06/Mar/2019 18:26:31] "GET /static/img/croped_rect/503_Door%20schedule_C5.jpg HTTP/1.1" 200 -
+INFO:werkzeug:105.108.12.173 - - [06/Mar/2019 18:26:34] "POST /posts HTTP/1.1" 200 -
+INFO:werkzeug:105.108.12.173 - - [06/Mar/2019 18:26:35] "GET /static/img/croped_rect/LRW-7459-L(70)19-Sign-Types-C.jpg HTTP/1.1" 200 -
+INFO:werkzeug:105.108.12.173 - - [06/Mar/2019 18:26:37] "POST /posts HTTP/1.1" 200 -
+INFO:werkzeug:105.108.12.173 - - [06/Mar/2019 18:26:38] "GET /static/img/croped_rect/ASF21828_3010-Screen-Ref-Elevation---CW07-Elevations,-Plans-Sections-&-Details-C.jpg HTTP/1.1" 200 -
+INFO:werkzeug:105.108.12.173 - - [06/Mar/2019 18:26:41] "POST /posts HTTP/1.1" 200 -
+INFO:werkzeug:105.108.12.173 - - [06/Mar/2019 18:26:41] "GET /static/img/croped_rect/1409-001-Key-Elevation--Acadamy-Way-P1.jpg HTTP/1.1" 200 -
+INFO:werkzeug:105.108.12.173 - - [06/Mar/2019 18:26:47] "POST /posts HTTP/1.1" 200 -
+INFO:werkzeug:105.108.12.173 - - [06/Mar/2019 18:26:47] "GET /static/img/croped_rect/4481-01C-D-E01-Elevation-B.jpg HTTP/1.1" 200 -
+INFO:werkzeug:105.108.12.173 - - [06/Mar/2019 18:26:55] "POST /posts HTTP/1.1" 200 -
+INFO:werkzeug:105.108.12.173 - - [06/Mar/2019 18:26:56] "GET /static/img/croped_rect/4481-01C-D-E01-Elevation-B.jpg HTTP/1.1" 200 -
+INFO:werkzeug:105.108.12.173 - - [06/Mar/2019 18:26:59] "POST /posts HTTP/1.1" 200 -
+INFO:werkzeug:105.108.12.173 - - [06/Mar/2019 18:27:00] "GET /static/img/croped_rect/C60298-50-M001-Mechanical-Public-Health-Services-AFC1.jpg HTTP/1.1" 200 -
+INFO:werkzeug:105.108.12.173 - - [06/Mar/2019 18:27:01] "POST /posts HTTP/1.1" 200 -
+INFO:werkzeug:105.108.12.173 - - [06/Mar/2019 18:27:02] "GET /static/img/croped_rect/16774-12.jpg HTTP/1.1" 200 -
+INFO:werkzeug:105.108.12.173 - - [06/Mar/2019 18:27:03] "POST /posts HTTP/1.1" 200 -
+INFO:werkzeug:105.108.12.173 - - [06/Mar/2019 18:27:05] "GET /static/img/croped_rect/W7352-3-LRW-comments-A.jpg HTTP/1.1" 200 -
+INFO:werkzeug:105.108.12.173 - - [06/Mar/2019 18:27:05] "POST /posts HTTP/1.1" 200 -
+INFO:werkzeug:105.108.12.173 - - [06/Mar/2019 18:27:07] "GET /static/img/croped_rect/2-C2.jpg HTTP/1.1" 200 -
+INFO:werkzeug:159.146.23.138 - - [06/Mar/2019 18:28:10] "GET / HTTP/1.1" 200 -
+ * Serving Flask app "app2" (lazy loading)
+ * Environment: production
+   WARNING: Do not use the development server in a production environment.
+   Use a production WSGI server instead.
+ * Debug mode: on
+INFO:werkzeug: * Running on http://0.0.0.0:80/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 248-377-634
+INFO:werkzeug:105.108.12.173 - - [06/Mar/2019 19:08:53] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:105.108.12.173 - - [06/Mar/2019 19:08:54] "GET /static/assets/css/Header-Nightsky.css HTTP/1.1" 304 -
+INFO:werkzeug:105.108.12.173 - - [06/Mar/2019 19:08:57] "GET /static/assets/style.css HTTP/1.1" 304 -
+INFO:werkzeug:105.108.12.173 - - [06/Mar/2019 19:08:57] "GET /static/assets/css/font-awesome.min.css HTTP/1.1" 304 -
+INFO:werkzeug:105.108.12.173 - - [06/Mar/2019 19:09:01] "GET /static/assets/img/nightsky.jpg HTTP/1.1" 304 -
+INFO:werkzeug:105.108.12.173 - - [06/Mar/2019 19:09:04] "GET /display HTTP/1.1" 200 -
+INFO:werkzeug:105.108.12.173 - - [06/Mar/2019 19:09:05] "GET /static/css/style.css HTTP/1.1" 304 -
+INFO:werkzeug:105.108.12.173 - - [06/Mar/2019 19:09:06] "GET /static/js/js.js HTTP/1.1" 304 -
+INFO:werkzeug:105.108.12.173 - - [06/Mar/2019 19:09:09] "GET /hello HTTP/1.1" 200 -
+INFO:werkzeug:105.108.12.173 - - [06/Mar/2019 19:09:10] "GET /static/img/croped_img/4481-01C-D-E01-Elevation-B.jpg HTTP/1.1" 304 -
+INFO:werkzeug:105.108.12.173 - - [06/Mar/2019 19:09:11] "GET /static/img/croped_img/ASF21828_3010-Screen-Ref-Elevation---CW07-Elevations,-Plans-Sections-&-Details-C.jpg HTTP/1.1" 304 -
+INFO:werkzeug:105.108.12.173 - - [06/Mar/2019 19:09:11] "GET /static/img/croped_img/2-C2.jpg HTTP/1.1" 304 -
+INFO:werkzeug:105.108.12.173 - - [06/Mar/2019 19:09:11] "GET /static/img/croped_img/503_Door%20schedule_C5.jpg HTTP/1.1" 304 -
+INFO:werkzeug:105.108.12.173 - - [06/Mar/2019 19:09:11] "GET /static/img/croped_img/NL-ISS-XX-01-DR-S-12.04_PROPOSED%20FIRST%20FLOOR%20PLAN%20(3).jpg HTTP/1.1" 304 -
+INFO:werkzeug:105.108.12.173 - - [06/Mar/2019 19:09:11] "GET /static/img/croped_img/1409-4200-LRW-comments-P1.jpg HTTP/1.1" 304 -
+INFO:werkzeug:105.108.12.173 - - [06/Mar/2019 19:09:13] "GET /static/img/croped_img/15-033(23.1)008-Structural-GA-Level-7-G.jpg HTTP/1.1" 304 -
+INFO:werkzeug:105.108.12.173 - - [06/Mar/2019 19:09:14] "GET /static/img/croped_img/C60298-50-M001-Mechanical-Public-Health-Services-AFC1.jpg HTTP/1.1" 304 -
+INFO:werkzeug:105.108.12.173 - - [06/Mar/2019 19:09:15] "GET /static/img/croped_img/16774-12.jpg HTTP/1.1" 304 -
+INFO:werkzeug:105.108.12.173 - - [06/Mar/2019 19:09:15] "GET /static/img/croped_img/W7352-3-LRW-comments-A.jpg HTTP/1.1" 304 -
+INFO:werkzeug:105.108.12.173 - - [06/Mar/2019 19:09:15] "GET /static/img/croped_img/LRW-7459-L(70)19-Sign-Types-C.jpg HTTP/1.1" 304 -
+INFO:werkzeug:105.108.12.173 - - [06/Mar/2019 19:09:15] "POST /posts HTTP/1.1" 200 -
+INFO:werkzeug:105.108.12.173 - - [06/Mar/2019 19:09:15] "GET /static/img/croped_img/1409-001-Key-Elevation--Acadamy-Way-P1.jpg HTTP/1.1" 304 -
+INFO:werkzeug:105.108.12.173 - - [06/Mar/2019 19:09:16] "GET /static/img/croped_rect/4481-01C-D-E01-Elevation-B.jpg HTTP/1.1" 200 -
+INFO:werkzeug:105.108.12.173 - - [06/Mar/2019 19:09:17] "POST /posts HTTP/1.1" 200 -
+INFO:werkzeug:105.108.12.173 - - [06/Mar/2019 19:09:18] "GET /static/img/croped_rect/C60298-50-M001-Mechanical-Public-Health-Services-AFC1.jpg HTTP/1.1" 200 -
+INFO:werkzeug:105.108.12.173 - - [06/Mar/2019 19:09:20] "POST /posts HTTP/1.1" 200 -
+INFO:werkzeug:105.108.12.173 - - [06/Mar/2019 19:09:21] "GET /static/img/croped_rect/2-C2.jpg HTTP/1.1" 200 -
+INFO:werkzeug:105.108.12.173 - - [06/Mar/2019 19:09:24] "POST /posts HTTP/1.1" 200 -
+INFO:werkzeug:105.108.12.173 - - [06/Mar/2019 19:09:26] "GET /static/img/croped_rect/NL-ISS-XX-01-DR-S-12.04_PROPOSED%20FIRST%20FLOOR%20PLAN%20(3).jpg HTTP/1.1" 200 -
+INFO:werkzeug:105.108.12.173 - - [06/Mar/2019 19:09:27] "POST /posts HTTP/1.1" 200 -
+INFO:werkzeug:105.108.12.173 - - [06/Mar/2019 19:09:28] "GET /static/img/croped_rect/503_Door%20schedule_C5.jpg HTTP/1.1" 200 -
+ * Serving Flask app "app2" (lazy loading)
+ * Environment: production
+   WARNING: Do not use the development server in a production environment.
+   Use a production WSGI server instead.
+ * Debug mode: on
+INFO:werkzeug: * Running on http://0.0.0.0:80/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 248-377-634
+INFO:werkzeug:52.114.75.71 - - [23/Apr/2019 23:04:03] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:52.114.75.71 - - [23/Apr/2019 23:04:04] "GET /favicon.ico HTTP/1.1" 404 -
+cd
+/home/salim_nadaa/mab_app/static/img/check/
+/home/salim_nadaa/mab_app/static/img/check_convert_300/4481-01C-D-S01-Section---Gridline-11-B.jpg
+['4481-01C-D-E01-Elevation-B.jpg', 'C60298-50-M001-Mechanical-Public-Health-Services-AFC1.jpg', '16774-12.jpg', 'W7352-3-LRW-comments-A.jpg', 'LRW-7459-L(70)19-Sign-Types-C.jpg', '1409-001-Key-Elevation--Acadamy-Way-P1.jpg', '2-C2.jpg', 'NL-ISS-XX-01-DR-S-12.04_PROPOSED FIRST FLOOR PLAN (3).jpg', 'ASF21828_3010-Screen-Ref-Elevation---CW07-Elevations,-Plans-Sections-&-Details-C.jpg', '503_Door schedule_C5.jpg', '15-033(23.1)008-Structural-GA-Level-7-G.jpg', '1409-4200-LRW-comments-P1.jpg']
+scale   1.0
+maxval === 282015936.0
+maxval 90== 43109552.0
+scale   0.9578947368421054
+maxval === 66166524.0
+maxval 90== 36030056.0
+scale   0.9157894736842105
+maxval === 49112768.0
+maxval 90== 39538004.0
+scale   0.8736842105263158
+maxval === 38454664.0
+maxval 90== 41203080.0
+scale   0.831578947368421
+maxval === 32948812.0
+maxval 90== 38642072.0
+scale   0.7894736842105263
+maxval === 36258444.0
+maxval 90== 34630988.0
+scale   0.7473684210526317
+maxval === 39952100.0
+maxval 90== 35758560.0
+scale   0.7052631578947368
+maxval === 33975780.0
+maxval 90== 43146060.0
+scale   0.6631578947368422
+maxval === 32846786.0
+maxval 90== 37884672.0
+scale   0.6210526315789473
+maxval === 35054256.0
+maxval 90== 43862420.0
+scale   0.5789473684210527
+maxval === 34039584.0
+maxval 90== 33443580.0
+scale   0.5368421052631579
+maxval === 27211030.0
+maxval 90== 30127434.0
+scale   0.49473684210526314
+maxval === 25044116.0
+maxval 90== 31576462.0
+scale   0.45263157894736844
+maxval 90== 40869500.0
+scale   0.4105263157894737
+maxval 90== 24355718.0
+scale   0.368421052631579
+maxval 90== 23177874.0
+scale   0.3263157894736842
+scale   0.28421052631578947
+scale   0.24210526315789474
+scale   0.2
+scale   1.0
+maxval === 58636512.0
+maxval 90== 56830644.0
+scale   0.9578947368421054
+maxval === 53843992.0
+maxval 90== 58880448.0
+scale   0.9157894736842105
+maxval === 46915928.0
+maxval 90== 57475856.0
+scale   0.8736842105263158
+maxval === 57348956.0
+maxval 90== 56263448.0
+scale   0.831578947368421
+maxval === 42969332.0
+maxval 90== 51394492.0
+scale   0.7894736842105263
+maxval === 62909328.0
+maxval 90== 54432052.0
+scale   0.7473684210526317
+maxval === 49057596.0
+maxval 90== 58372224.0
+scale   0.7052631578947368
+maxval === 48758408.0
+maxval 90== 63657816.0
+scale   0.6631578947368422
+maxval === 47311188.0
+maxval 90== 48524460.0
+scale   0.6210526315789473
+maxval === 53247328.0
+maxval 90== 49208752.0
+scale   0.5789473684210527
+maxval 90== 52305244.0
+scale   0.5368421052631579
+maxval 90== 39606064.0
+scale   0.49473684210526314
+maxval 90== 42114088.0
+scale   0.45263157894736844
+maxval 90== 40765312.0
+scale   0.4105263157894737
+scale   0.368421052631579
+scale   0.3263157894736842
+scale   0.28421052631578947
+scale   0.24210526315789474
+scale   0.2
+scale   1.0
+maxval === 65613516.0
+maxval 90== 47751892.0
+scale   0.9578947368421054
+maxval === 58238952.0
+maxval 90== 51106680.0
+scale   0.9157894736842105
+maxval === 55902668.0
+maxval 90== 52283116.0
+scale   0.8736842105263158
+maxval === 39026132.0
+maxval 90== 47192808.0
+scale   0.831578947368421
+maxval === 56597024.0
+maxval 90== 56092364.0
+scale   0.7894736842105263
+maxval === 51799052.0
+maxval 90== 47324628.0
+scale   0.7473684210526317
+maxval === 46383320.0
+maxval 90== 39360904.0
+scale   0.7052631578947368
+maxval === 57646744.0
+maxval 90== 65086356.0
+scale   0.6631578947368422
+maxval === 47312840.0
+maxval 90== 46480400.0
+scale   0.6210526315789473
+maxval === 43324548.0
+maxval 90== 36656688.0
+scale   0.5789473684210527
+maxval === 43529012.0
+maxval 90== 47884456.0
+scale   0.5368421052631579
+maxval === 47794156.0
+maxval 90== 47947016.0
+scale   0.49473684210526314
+maxval === 49056832.0
+maxval 90== 39981840.0
+scale   0.45263157894736844
+maxval === 42969352.0
+maxval 90== 48470772.0
+scale   0.4105263157894737
+maxval 90== 15656809.0
+scale   0.368421052631579
+scale   0.3263157894736842
+scale   0.28421052631578947
+scale   0.24210526315789474
+scale   0.2
+scale   1.0
+maxval === 10955439.0
+maxval 90== 9993016.0
+scale   0.9578947368421054
+maxval === 11321383.0
+maxval 90== 11494424.0
+scale   0.9157894736842105
+maxval === 13047007.0
+maxval 90== 10296401.0
+scale   0.8736842105263158
+maxval === 10937656.0
+maxval 90== 10089305.0
+scale   0.831578947368421
+maxval === 10454523.0
+maxval 90== 10698387.0
+scale   0.7894736842105263
+maxval === 11281607.0
+maxval 90== 9713402.0
+scale   0.7473684210526317
+maxval === 10710589.0
+maxval 90== 9738554.0
+scale   0.7052631578947368
+maxval === 10018634.0
+maxval 90== 9272202.0
+scale   0.6631578947368422
+maxval === 9644625.0
+maxval 90== 10332015.0
+scale   0.6210526315789473
+maxval === 9624297.0
+maxval 90== 9868602.0
+scale   0.5789473684210527
+maxval === 9380636.0
+maxval 90== 11256339.0
+scale   0.5368421052631579
+maxval === 12628158.0
+maxval 90== 9620814.0
+scale   0.49473684210526314
+maxval === 10360502.0
+maxval 90== 9331110.0
+scale   0.45263157894736844
+maxval === 9483780.0
+maxval 90== 8174080.5
+scale   0.4105263157894737
+maxval === 8078346.0
+scale   0.368421052631579
+maxval === 8737563.0
+scale   0.3263157894736842
+maxval === 8586142.0
+scale   0.28421052631578947
+scale   0.24210526315789474
+scale   0.2
+scale   1.0
+maxval === 36578000.0
+maxval 90== 26192504.0
+scale   0.9578947368421054
+maxval === 42101960.0
+maxval 90== 32349942.0
+scale   0.9157894736842105
+maxval === 34056196.0
+maxval 90== 26582710.0
+scale   0.8736842105263158
+maxval === 28646136.0
+maxval 90== 24990166.0
+scale   0.831578947368421
+maxval === 28096634.0
+maxval 90== 23584658.0
+scale   0.7894736842105263
+maxval === 27302784.0
+maxval 90== 24152376.0
+scale   0.7473684210526317
+maxval === 27973062.0
+maxval 90== 26710174.0
+scale   0.7052631578947368
+maxval === 37874084.0
+maxval 90== 23738820.0
+scale   0.6631578947368422
+maxval === 24695158.0
+maxval 90== 27160978.0
+scale   0.6210526315789473
+maxval === 28483666.0
+maxval 90== 21442716.0
+scale   0.5789473684210527
+maxval === 23003014.0
+maxval 90== 22187298.0
+scale   0.5368421052631579
+maxval === 30743384.0
+maxval 90== 19774462.0
+scale   0.49473684210526314
+maxval === 27171724.0
+maxval 90== 22234972.0
+scale   0.45263157894736844
+maxval === 20765374.0
+maxval 90== 27980294.0
+scale   0.4105263157894737
+maxval === 20947298.0
+maxval 90== 17997248.0
+scale   0.368421052631579
+maxval === 19233288.0
+maxval 90== 19230798.0
+scale   0.3263157894736842
+maxval 90== 11723258.0
+scale   0.28421052631578947
+maxval 90== 15956083.0
+scale   0.24210526315789474
+maxval 90== 5168272.5
+scale   0.2
+scale   1.0
+maxval === 20667106.0
+maxval 90== 18053070.0
+scale   0.9578947368421054
+maxval === 18542966.0
+maxval 90== 14925839.0
+scale   0.9157894736842105
+maxval === 18868090.0
+maxval 90== 15146731.0
+scale   0.8736842105263158
+maxval === 20374506.0
+maxval 90== 16881478.0
+scale   0.831578947368421
+maxval === 18001078.0
+maxval 90== 17632584.0
+scale   0.7894736842105263
+maxval === 19919316.0
+maxval 90== 14695277.0
+scale   0.7473684210526317
+maxval === 20927212.0
+maxval 90== 14476397.0
+scale   0.7052631578947368
+maxval === 24449396.0
+maxval 90== 15927072.0
+scale   0.6631578947368422
+maxval === 16061172.0
+maxval 90== 17999172.0
+scale   0.6210526315789473
+maxval === 18954794.0
+maxval 90== 16394805.0
+scale   0.5789473684210527
+maxval === 17545902.0
+maxval 90== 14836252.0
+scale   0.5368421052631579
+maxval === 17871038.0
+maxval 90== 13590255.0
+scale   0.49473684210526314
+maxval === 17925228.0
+maxval 90== 12960509.0
+scale   0.45263157894736844
+maxval === 14630627.0
+maxval 90== 12797365.0
+scale   0.4105263157894737
+maxval === 18434592.0
+maxval 90== 13577430.0
+scale   0.368421052631579
+maxval 90== 11625201.0
+scale   0.3263157894736842
+maxval 90== 8156208.0
+scale   0.28421052631578947
+maxval 90== 6866522.5
+scale   0.24210526315789474
+scale   0.2
+scale   1.0
+maxval === 41695748.0
+maxval 90== 46354256.0
+scale   0.9578947368421054
+maxval === 49638512.0
+maxval 90== 48326884.0
+scale   0.9157894736842105
+maxval === 41221232.0
+maxval 90== 49324268.0
+scale   0.8736842105263158
+maxval === 38724336.0
+maxval 90== 40351068.0
+scale   0.831578947368421
+maxval === 39566720.0
+maxval 90== 37850584.0
+scale   0.7894736842105263
+maxval === 42927832.0
+maxval 90== 39087364.0
+scale  DEBUG:PIL.PngImagePlugin:STREAM b'IHDR' 16 13
+DEBUG:PIL.PngImagePlugin:STREAM b'IDAT' 41 5781
+DEBUG:PIL.PngImagePlugin:STREAM b'IHDR' 16 13
+DEBUG:PIL.PngImagePlugin:STREAM b'IDAT' 41 1273
+DEBUG:PIL.PngImagePlugin:STREAM b'IHDR' 16 13
+DEBUG:PIL.PngImagePlugin:STREAM b'IDAT' 41 276
+INFO:werkzeug:129.45.91.41 - - [23/Apr/2019 23:10:03] "POST /check HTTP/1.1" 200 -
+INFO:werkzeug:129.45.91.41 - - [23/Apr/2019 23:10:03] "GET /static/css/bootstrap.css HTTP/1.1" 304 -
+INFO:werkzeug:129.45.91.41 - - [23/Apr/2019 23:10:04] "GET /static/img/drawing_number.jpg HTTP/1.1" 200 -
+INFO:werkzeug:129.45.91.41 - - [23/Apr/2019 23:10:04] "GET /static/img/revision.jpg HTTP/1.1" 200 -
+INFO:werkzeug:129.45.91.41 - - [23/Apr/2019 23:10:04] "GET /static/img/title.jpg HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/home/salim_nadaa/mab_app/pixels_match.py', reloading
+ 0.7473684210526317
+maxval === 43011136.0
+maxval 90== 38856168.0
+scale   0.7052631578947368
+maxval === 41961224.0
+maxval 90== 38353884.0
+scale   0.6631578947368422
+maxval === 35635172.0
+maxval 90== 44959712.0
+scale   0.6210526315789473
+maxval === 34951388.0
+maxval 90== 39546748.0
+scale   0.5789473684210527
+maxval === 31816124.0
+maxval 90== 37632448.0
+scale   0.5368421052631579
+maxval === 34963572.0
+maxval 90== 40352096.0
+scale   0.49473684210526314
+maxval === 32602654.0
+maxval 90== 31977490.0
+scale   0.45263157894736844
+maxval 90== 30666566.0
+scale   0.4105263157894737
+scale   0.368421052631579
+scale   0.3263157894736842
+scale   0.28421052631578947
+scale   0.24210526315789474
+scale   0.2
+scale   1.0
+maxval === 11163237.0
+maxval 90== 10176922.0
+scale   0.9578947368421054
+maxval === 11173404.0
+maxval 90== 10551774.0
+scale   0.9157894736842105
+maxval === 11308684.0
+maxval 90== 10845788.0
+scale   0.8736842105263158
+maxval === 14047044.0
+maxval 90== 9910321.0
+scale   0.831578947368421
+maxval === 12294740.0
+maxval 90== 10225626.0
+scale   0.7894736842105263
+maxval === 11602837.0
+maxval 90== 10099786.0
+scale   0.7473684210526317
+maxval === 10920105.0
+maxval 90== 11448100.0
+scale   0.7052631578947368
+maxval === 12504040.0
+maxval 90== 9847204.0
+scale   0.6631578947368422
+maxval === 11517698.0
+maxval 90== 9195428.0
+scale   0.6210526315789473
+maxval === 13994272.0
+maxval 90== 10823731.0
+scale   0.5789473684210527
+maxval === 10811418.0
+maxval 90== 9309156.0
+scale   0.5368421052631579
+maxval === 13545448.0
+maxval 90== 10471066.0
+scale   0.49473684210526314
+maxval === 10505234.0
+maxval 90== 8920536.0
+scale   0.45263157894736844
+maxval === 9656256.0
+maxval 90== 9728378.0
+scale   0.4105263157894737
+maxval === 9965583.0
+maxval 90== 9068436.0
+scale   0.368421052631579
+maxval === 9532836.0
+maxval 90== 8797118.0
+scale   0.3263157894736842
+maxval === 9955582.0
+maxval 90== 7697304.5
+scale   0.28421052631578947
+maxval === 7689991.5
+maxval 90== 8853599.0
+scale   0.24210526315789474
+maxval === 5896662.5
+maxval 90== 8646414.0
+scale   0.2
+maxval === 5576767.0
+maxval 90== 8578076.0
+scale   1.0
+maxval === 55675600.0
+maxval 90== 54044428.0
+scale   0.9578947368421054
+maxval === 62452904.0
+maxval 90== 51902880.0
+scale   0.9157894736842105
+maxval === 64747400.0
+maxval 90== 44775660.0
+scale   0.8736842105263158
+maxval === 44966388.0
+maxval 90== 46871068.0
+scale   0.831578947368421
+maxval === 44561824.0
+maxval 90== 46461120.0
+scale   0.7894736842105263
+maxval === 54198244.0
+maxval 90== 48400300.0
+scale   0.7473684210526317
+maxval === 47654764.0
+maxval 90== 44686000.0
+scale   0.7052631578947368
+maxval === 46320900.0
+maxval 90== 41464744.0
+scale   0.6631578947368422
+maxval === 44633928.0
+maxval 90== 42986820.0
+scale   0.6210526315789473
+maxval === 44164504.0
+maxval 90== 43790888.0
+scale   0.5789473684210527
+maxval === 34221468.0
+maxval 90== 34698932.0
+scale   0.5368421052631579
+maxval === 33098060.0
+maxval 90== 34017308.0
+scale   0.49473684210526314
+maxval === 26769502.0
+maxval 90== 39204904.0
+scale   0.45263157894736844
+maxval 90== 31481416.0
+scale   0.4105263157894737
+maxval 90== 31641070.0
+scale   0.368421052631579
+scale   0.3263157894736842
+scale   0.28421052631578947
+scale   0.24210526315789474
+scale   0.2
+scale   1.0
+maxval === 38601184.0
+maxval 90== 28498796.0
+scale   0.9578947368421054
+maxval === 37074684.0
+maxval 90== 29121528.0
+scale   0.9157894736842105
+maxval === 33746840.0
+maxval 90== 30097430.0
+scale   0.8736842105263158
+maxval === 31804144.0
+maxval 90== 31320452.0
+scale   0.831578947368421
+maxval === 30629876.0
+maxval 90== 28278842.0
+scale   0.7894736842105263
+maxval === 32863762.0
+maxval 90== 28022752.0
+scale   0.7473684210526317
+maxval === 30074688.0
+maxval 90== 33351572.0
+scale   0.7052631578947368
+maxval === 33366156.0
+maxval 90== 26839784.0
+scale   0.6631578947368422
+maxval === 27362098.0
+maxval 90== 32585802.0
+scale   0.6210526315789473
+maxval === 32204342.0
+maxval 90== 29003240.0
+scale   0.5789473684210527
+maxval === 29292334.0
+maxval 90== 31406750.0
+scale   0.5368421052631579
+maxval === 33499196.0
+maxval 90== 26997056.0
+scale   0.49473684210526314
+maxval === 24363360.0
+maxval 90== 27415608.0
+scale   0.45263157894736844
+maxval === 26347628.0
+maxval 90== 34479684.0
+scale   0.4105263157894737
+maxval === 20814800.0
+maxval 90== 23092258.0
+scale   0.368421052631579
+maxval === 23509862.0
+maxval 90== 22191086.0
+scale   0.3263157894736842
+maxval === 16845914.0
+maxval 90== 19584668.0
+scale   0.28421052631578947
+maxval === 24169278.0
+maxval 90== 25011490.0
+scale   0.24210526315789474
+maxval 90== 15385257.0
+scale   0.2
+scale   1.0
+maxval === 36386392.0
+maxval 90== 22716966.0
+scale   0.9578947368421054
+maxval === 31155168.0
+maxval 90== 24538848.0
+scale   0.9157894736842105
+maxval === 30782484.0
+maxval 90== 20929692.0
+scale   0.8736842105263158
+maxval === 31891352.0
+maxval 90== 26227812.0
+scale   0.831578947368421
+maxval === 21300326.0
+maxval 90== 28201394.0
+scale   0.7894736842105263
+maxval === 24993836.0
+maxval 90== 20736596.0
+scale   0.7473684210526317
+maxval === 23273442.0
+maxval 90== 23414030.0
+scale   0.7052631578947368
+maxval === 26757384.0
+maxval 90== 20178188.0
+scale   0.6631578947368422
+maxval === 26166718.0
+maxval 90== 21638970.0
+scale   0.6210526315789473
+maxval === 30470524.0
+maxval 90== 21964460.0
+scale   0.5789473684210527
+maxval === 21860160.0
+maxval 90== 18278146.0
+scale   0.5368421052631579
+maxval === 25584186.0
+maxval 90== 17433414.0
+scale   0.49473684210526314
+maxval === 30442586.0
+maxval 90== 17276758.0
+scale   0.45263157894736844
+maxval === 26158654.0
+maxval 90== 25225008.0
+scale   0.4105263157894737
+maxval === 22696200.0
+maxval 90== 14895139.0
+scale   0.368421052631579
+maxval === 15972032.0
+maxval 90== 14924445.0
+scale   0.3263157894736842
+maxval === 22987420.0
+maxval 90== 12687978.0
+scale   0.28421052631578947
+maxval === 12862983.0
+maxval 90== 13226818.0
+scale   0.24210526315789474
+maxval 90== 10287924.0
+scale   0.2
+scale   1.0
+maxval === 19590776.0
+maxval 90== 17284912.0
+scale   0.9578947368421054
+maxval === 18758942.0
+maxval 90== 17293934.0
+scale   0.9157894736842105
+maxval === 21326360.0
+maxval 90== 14776859.0
+scale   0.8736842105263158
+maxval === 16306670.0
+maxval 90== 16644571.0
+scale   0.831578947368421
+maxval === 15819405.0
+maxval 90== 16192579.0
+scale   0.7894736842105263
+maxval === 17055640.0
+maxval 90== 13304692.0
+scale   0.7473684210526317
+maxval === 17994204.0
+maxval 90== 17197014.0
+scale   0.7052631578947368
+maxval === 16519747.0
+maxval 90== 15194911.0
+scale   0.6631578947368422
+maxval === 16291495.0
+maxval 90== 13267665.0
+scale   0.6210526315789473
+maxval === 19951334.0
+maxval 90== 14502075.0
+scale   0.5789473684210527
+maxval === 17225462.0
+maxval 90== 12896132.0
+scale   0.5368421052631579
+maxval === 15076192.0
+maxval 90== 12824392.0
+scale   0.49473684210526314
+maxval === 14701076.0
+maxval 90== 14171132.0
+scale   0.45263157894736844
+maxval === 11526747.0
+maxval 90== 11279367.0
+scale   0.4105263157894737
+maxval === 9718379.0
+maxval 90== 11802274.0
+scale   0.368421052631579
+maxval 90== 13187032.0
+scale   0.3263157894736842
+maxval 90== 10008457.0
+scale   0.28421052631578947
+maxval 90== 2683064.75
+scale   0.24210526315789474
+scale   0.2
+max== 9718379.0
+4481-01C-D-E01-Elevation-B.jpg
+title   : {"x":26.08562691131497,"y":1117.896024464832,"width":669.4862385321102,"height":117.83792048929665,"rotate":0,"scaleX":1,"scaleY":1}
+title_text= UNPERFORATED SOFFIT CLADDING
+SECTION - GRIDLINE 11
+img_drawingN= 01C-D-501
+img_revsion= B
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 248-377-634
+/home/salim_nadaa/mab_app/static/img/check/
+/home/salim_nadaa/mab_app/static/img/check_convert_300/4481-01C-D-S01-Section---Gridline-11-B.jpg
+['4481-01C-D-E01-Elevation-B.jpg', 'C60298-50-M001-Mechanical-Public-Health-Services-AFC1.jpg', '16774-12.jpg', 'W7352-3-LRW-comments-A.jpg', 'LRW-7459-L(70)19-Sign-Types-C.jpg', '1409-001-Key-Elevation--Acadamy-Way-P1.jpg', '2-C2.jpg', 'NL-ISS-XX-01-DR-S-12.04_PROPOSED FIRST FLOOR PLAN (3).jpg', 'ASF21828_3010-Screen-Ref-Elevation---CW07-Elevations,-Plans-Sections-&-Details-C.jpg', '503_Door schedule_C5.jpg', '15-033(23.1)008-Structural-GA-Level-7-G.jpg', '1409-4200-LRW-comments-P1.jpg']
+scale   1.0
+maxval === 282015936.0
+maxval 90== 43109552.0
+scale   0.9578947368421054
+maxval === 66166524.0
+maxval 90== 36030056.0
+scale   0.9157894736842105
+maxval === 49112768.0
+maxval 90== 39538004.0
+scale   0.8736842105263158
+maxval === 38454664.0
+maxval 90== 41203080.0
+scale   0.831578947368421
+maxval === 32948812.0
+maxval 90== 38642072.0
+scale   0.7894736842105263
+maxval === 36258444.0
+maxval 90== 34630988.0
+scale   0.7473684210526317
+maxval === 39952100.0
+maxval 90== 35758560.0
+scale   0.7052631578947368
+maxval === 33975780.0
+maxval 90== 43146060.0
+scale   0.6631578947368422
+maxval === 32846786.0
+maxval 90== 37884672.0
+scale   0.6210526315789473
+maxval === 35054256.0
+maxval 90== 43862420.0
+scale   0.5789473684210527
+maxval === 34039584.0
+maxval 90== 33443580.0
+scale   0.5368421052631579
+maxval === 27211030.0
+maxval 90== 30127434.0
+scale   0.49473684210526314
+maxval === 25044116.0
+maxval 90== 31576462.0
+scale   0.45263157894736844
+maxval 90== 40869500.0
+scale   0.4105263157894737
+maxval 90== 24355718.0
+scale   0.368421052631579
+maxval 90== 23177874.0
+scale   0.3263157894736842
+scale   0.28421052631578947
+scale   0.24210526315789474
+scale   0.2
+scale   1.0
+maxval === 58636512.0
+maxval 90== 56830644.0
+scale   0.9578947368421054
+maxval === 53843992.0
+maxval 90== 58880448.0
+scale   0.9157894736842105
+maxval === 46915928.0
+maxval 90== 57475856.0
+scale   0.8736842105263158
+maxval === 57348956.0
+maxval 90== 56263448.0
+scale   0.831578947368421
+maxval === 42969332.0
+maxval 90== 51394492.0
+scale   0.7894736842105263
+maxval === 62909328.0
+maxval 90== 54432052.0
+scale   0.7473684210526317
+maxval === 49057596.0
+maxval 90== 58372224.0
+scale   0.7052631578947368
+maxval === 48758408.0
+maxval 90== 63657816.0
+scale   0.6631578947368422
+maxval === 47311188.0
+maxval 90== 48524460.0
+scale   0.6210526315789473
+maxval === 53247328.0
+maxval 90== 49208752.0
+scale   0.5789473684210527
+maxval 90== 52305244.0
+scale   0.5368421052631579
+maxval 90== 39606064.0
+scale   0.49473684210526314
+maxval 90== 42114088.0
+scale   0.45263157894736844
+maxval 90== 40765312.0
+scale   0.4105263157894737
+scale   0.368421052631579
+scale   0.3263157894736842
+scale   0.28421052631578947
+scale   0.24210526315789474
+scale   0.2
+scale   1.0
+maxval === 65613516.0
+maxval 90== 47751892.0
+scale   0.9578947368421054
+maxval === 58238952.0
+maxval 90== 51106680.0
+scale   0.9157894736842105
+maxval === 55902668.0
+maxval 90== 52283116.0
+scale   0.8736842105263158
+maxval === 39026132.0
+maxval 90== 47192808.0
+scale   0.831578947368421
+maxval === 56597024.0
+maxval 90== 56092364.0
+scale   0.7894736842105263
+maxval === 51799052.0
+maxval 90== 47324628.0
+scale   0.7473684210526317
+maxval === 46383320.0
+maxval 90== 39360904.0
+scale   0.7052631578947368
+maxval === 57646744.0
+maxval 90== 65086356.0
+scale   0.6631578947368422
+maxval === 47312840.0
+maxval 90== 46480400.0
+scale   0.6210526315789473
+maxval === 43324548.0
+maxval 90== 36656688.0
+scale   0.5789473684210527
+maxval === 43529012.0
+maxval 90== 47884456.0
+scale   0.5368421052631579
+maxval === 47794156.0
+maxval 90== 47947016.0
+scale   0.49473684210526314
+maxval === 49056832.0
+maxval 90== 39981840.0
+scale   0.45263157894736844
+maxval === 42969352.0
+maxval 90== 48470772.0
+scale   0.4105263157894737
+maxval 90== 15656809.0
+scale   0.368421052631579
+scale   0.3263157894736842
+scale   0.28421052631578947
+scale   0.24210526315789474
+scale   0.2
+scale   1.0
+maxval === 10955439.0
+maxval 90== 9993016.0
+scale   0.9578947368421054
+maxval === 11321383.0
+maxval 90== 11494424.0
+scale   0.9157894736842105
+maxval === 13047007.0
+maxval 90== 10296401.0
+scale   0.8736842105263158
+maxval === 10937656.0
+maxval 90== 10089305.0
+scale   0.831578947368421
+maxval === 10454523.0
+maxval 90== 10698387.0
+scale   0.7894736842105263
+maxval === 11281607.0
+maxval 90== 9713402.0
+scale   0.7473684210526317
+maxval === 10710589.0
+maxval 90== 9738554.0
+scale   0.7052631578947368
+maxval === 10018634.0
+maxval 90== 9272202.0
+scale   0.6631578947368422
+maxval === 9644625.0
+maxval 90== 10332015.0
+scale   0.6210526315789473
+maxval === 9624297.0
+maxval 90== 9868602.0
+scale   0.5789473684210527
+maxval === 9380636.0
+maxval 90== 11256339.0
+scale   0.5368421052631579
+maxval === 12628158.0
+maxval 90== 9620814.0
+scale   0.49473684210526314
+maxval === 10360502.0
+maxval 90== 9331110.0
+scale   0.45263157894736844
+maxval === 9483780.0
+maxval 90== 8174080.5
+scale   0.4105263157894737
+maxval === 8078346.0
+scale   0.368421052631579
+maxval === 8737563.0
+scale   0.3263157894736842
+maxval === 8586142.0
+scale   0.28421052631578947
+scale   0.24210526315789474
+scale   0.2
+scale   1.0
+maxval === 36578000.0
+maxval 90== 26192504.0
+scale   0.9578947368421054
+maxval === 42101960.0
+maxval 90== 32349942.0
+scale   0.9157894736842105
+maxval === 34056196.0
+maxval 90== 26582710.0
+scale   0.8736842105263158
+maxval === 28646136.0
+maxval 90== 24990166.0
+scale   0.831578947368421
+maxval === 28096634.0
+maxval 90== 23584658.0
+scale   0.7894736842105263
+maxval === 27302784.0
+maxval 90== 24152376.0
+scale   0.7473684210526317
+maxval === 27973062.0
+maxval 90== 26710174.0
+scale   0.7052631578947368
+maxval === 37874084.0
+maxval 90== 23738820.0
+scale   0.6631578947368422
+maxval === 24695158.0
+maxval 90== 27160978.0
+scale   0.6210526315789473
+maxval === 28483666.0
+maxval 90== 21442716.0
+scale   0.5789473684210527
+maxval === 23003014.0
+maxval 90== 22187298.0
+scale   0.5368421052631579
+maxval === 30743384.0
+maxval 90== 19774462.0
+scale   0.49473684210526314
+maxval === 27171724.0
+maxval 90== 22234972.0
+scale   0.45263157894736844
+maxval === 20765374.0
+maxval 90== 27980294.0
+scale   0.4105263157894737
+maxval === 20947298.0
+maxval 90== 17997248.0
+scale   0.368421052631579
+maxval === 19233288.0
+maxval 90== 19230798.0
+scale   0.3263157894736842
+maxval 90== 11723258.0
+scale   0.28421052631578947
+maxval 90== 15956083.0
+scale   0.24210526315789474
+maxval 90== 5168272.5
+scale   0.2
+scale   1.0
+maxval === 20667106.0
+maxval 90== 18053070.0
+scale   0.9578947368421054
+maxval === 18542966.0
+maxval 90== 14925839.0
+scale   0.9157894736842105
+maxval === 18868090.0
+maxval 90== 15146731.0
+scale   0.8736842105263158
+maxval === 20374506.0
+maxval 90== 16881478.0
+scale   0.831578947368421
+maxval === 18001078.0
+maxval 90== 17632584.0
+scale   0.7894736842105263
+maxval === 19919316.0
+maxval 90== 14695277.0
+scale   0.7473684210526317
+maxval === 20927212.0
+maxval 90== 14476397.0
+scale   0.7052631578947368
+maxval === 24449396.0
+maxval 90== 15927072.0
+scale   0.6631578947368422
+maxval === 16061172.0
+maxval 90== 17999172.0
+scale   0.6210526315789473
+maxval === 18954794.0
+maxval 90== 16394805.0
+scale   0.5789473684210527
+maxval === 17545902.0
+maxval 90== 14836252.0
+scale   0.5368421052631579
+maxval === 17871038.0
+maxval 90== 13590255.0
+scale   0.49473684210526314
+maxval === 17925228.0
+maxval 90== 12960509.0
+scale   0.45263157894736844
+maxval === 14630627.0
+maxval 90== 12797365.0
+scale   0.4105263157894737
+maxval === 18434592.0
+maxval 90== 13577430.0
+scale   0.368421052631579
+maxval 90== 11625201.0
+scale   0.3263157894736842
+maxval 90== 8156208.0
+scale   0.28421052631578947
+maxval 90== 6866522.5
+scale   0.24210526315789474
+scale   0.2
+scale   1.0
+maxval === 41695748.0
+maxval 90== 46354256.0
+scale   0.9578947368421054
+maxval === 49638512.0
+maxval 90== 48326884.0
+scale   0.9157894736842105
+maxval === 41221232.0
+maxval 90== 49324268.0
+scale   0.8736842105263158
+maxval === 38724336.0
+maxval 90== 40351068.0
+scale   0.831578947368421
+maxval === 39566720.0
+maxval 90== 37850584.0
+scale   0.7894736842105263
+maxval === 42927832.0
+maxval 90== 39087364.0
+scale   DEBUG:PIL.PngImagePlugin:STREAM b'IHDR' 16 13
+DEBUG:PIL.PngImagePlugin:STREAM b'IDAT' 41 5781
+DEBUG:PIL.PngImagePlugin:STREAM b'IHDR' 16 13
+DEBUG:PIL.PngImagePlugin:STREAM b'IDAT' 41 1273
+DEBUG:PIL.PngImagePlugin:STREAM b'IHDR' 16 13
+DEBUG:PIL.PngImagePlugin:STREAM b'IDAT' 41 276
+INFO:werkzeug:129.45.91.41 - - [23/Apr/2019 23:29:03] "POST /check HTTP/1.1" 200 -
+INFO:werkzeug:129.45.91.41 - - [23/Apr/2019 23:29:04] "GET /static/img/title.jpg HTTP/1.1" 200 -
+INFO:werkzeug:129.45.91.41 - - [23/Apr/2019 23:29:04] "GET /static/css/bootstrap.css HTTP/1.1" 304 -
+INFO:werkzeug:129.45.91.41 - - [23/Apr/2019 23:29:04] "GET /static/img/drawing_number.jpg HTTP/1.1" 200 -
+INFO:werkzeug:129.45.91.41 - - [23/Apr/2019 23:29:04] "GET /static/img/revision.jpg HTTP/1.1" 200 -
+0.7473684210526317
+maxval === 43011136.0
+maxval 90== 38856168.0
+scale   0.7052631578947368
+maxval === 41961224.0
+maxval 90== 38353884.0
+scale   0.6631578947368422
+maxval === 35635172.0
+maxval 90== 44959712.0
+scale   0.6210526315789473
+maxval === 34951388.0
+maxval 90== 39546748.0
+scale   0.5789473684210527
+maxval === 31816124.0
+maxval 90== 37632448.0
+scale   0.5368421052631579
+maxval === 34963572.0
+maxval 90== 40352096.0
+scale   0.49473684210526314
+maxval === 32602654.0
+maxval 90== 31977490.0
+scale   0.45263157894736844
+maxval 90== 30666566.0
+scale   0.4105263157894737
+scale   0.368421052631579
+scale   0.3263157894736842
+scale   0.28421052631578947
+scale   0.24210526315789474
+scale   0.2
+scale   1.0
+maxval === 11163237.0
+maxval 90== 10176922.0
+scale   0.9578947368421054
+maxval === 11173404.0
+maxval 90== 10551774.0
+scale   0.9157894736842105
+maxval === 11308684.0
+maxval 90== 10845788.0
+scale   0.8736842105263158
+maxval === 14047044.0
+maxval 90== 9910321.0
+scale   0.831578947368421
+maxval === 12294740.0
+maxval 90== 10225626.0
+scale   0.7894736842105263
+maxval === 11602837.0
+maxval 90== 10099786.0
+scale   0.7473684210526317
+maxval === 10920105.0
+maxval 90== 11448100.0
+scale   0.7052631578947368
+maxval === 12504040.0
+maxval 90== 9847204.0
+scale   0.6631578947368422
+maxval === 11517698.0
+maxval 90== 9195428.0
+scale   0.6210526315789473
+maxval === 13994272.0
+maxval 90== 10823731.0
+scale   0.5789473684210527
+maxval === 10811418.0
+maxval 90== 9309156.0
+scale   0.5368421052631579
+maxval === 13545448.0
+maxval 90== 10471066.0
+scale   0.49473684210526314
+maxval === 10505234.0
+maxval 90== 8920536.0
+scale   0.45263157894736844
+maxval === 9656256.0
+maxval 90== 9728378.0
+scale   0.4105263157894737
+maxval === 9965583.0
+maxval 90== 9068436.0
+scale   0.368421052631579
+maxval === 9532836.0
+maxval 90== 8797118.0
+scale   0.3263157894736842
+maxval === 9955582.0
+maxval 90== 7697304.5
+scale   0.28421052631578947
+maxval === 7689991.5
+maxval 90== 8853599.0
+scale   0.24210526315789474
+maxval === 5896662.5
+maxval 90== 8646414.0
+scale   0.2
+maxval === 5576767.0
+maxval 90== 8578076.0
+scale   1.0
+maxval === 55675600.0
+maxval 90== 54044428.0
+scale   0.9578947368421054
+maxval === 62452904.0
+maxval 90== 51902880.0
+scale   0.9157894736842105
+maxval === 64747400.0
+maxval 90== 44775660.0
+scale   0.8736842105263158
+maxval === 44966388.0
+maxval 90== 46871068.0
+scale   0.831578947368421
+maxval === 44561824.0
+maxval 90== 46461120.0
+scale   0.7894736842105263
+maxval === 54198244.0
+maxval 90== 48400300.0
+scale   0.7473684210526317
+maxval === 47654764.0
+maxval 90== 44686000.0
+scale   0.7052631578947368
+maxval === 46320900.0
+maxval 90== 41464744.0
+scale   0.6631578947368422
+maxval === 44633928.0
+maxval 90== 42986820.0
+scale   0.6210526315789473
+maxval === 44164504.0
+maxval 90== 43790888.0
+scale   0.5789473684210527
+maxval === 34221468.0
+maxval 90== 34698932.0
+scale   0.5368421052631579
+maxval === 33098060.0
+maxval 90== 34017308.0
+scale   0.49473684210526314
+maxval === 26769502.0
+maxval 90== 39204904.0
+scale   0.45263157894736844
+maxval 90== 31481416.0
+scale   0.4105263157894737
+maxval 90== 31641070.0
+scale   0.368421052631579
+scale   0.3263157894736842
+scale   0.28421052631578947
+scale   0.24210526315789474
+scale   0.2
+scale   1.0
+maxval === 38601184.0
+maxval 90== 28498796.0
+scale   0.9578947368421054
+maxval === 37074684.0
+maxval 90== 29121528.0
+scale   0.9157894736842105
+maxval === 33746840.0
+maxval 90== 30097430.0
+scale   0.8736842105263158
+maxval === 31804144.0
+maxval 90== 31320452.0
+scale   0.831578947368421
+maxval === 30629876.0
+maxval 90== 28278842.0
+scale   0.7894736842105263
+maxval === 32863762.0
+maxval 90== 28022752.0
+scale   0.7473684210526317
+maxval === 30074688.0
+maxval 90== 33351572.0
+scale   0.7052631578947368
+maxval === 33366156.0
+maxval 90== 26839784.0
+scale   0.6631578947368422
+maxval === 27362098.0
+maxval 90== 32585802.0
+scale   0.6210526315789473
+maxval === 32204342.0
+maxval 90== 29003240.0
+scale   0.5789473684210527
+maxval === 29292334.0
+maxval 90== 31406750.0
+scale   0.5368421052631579
+maxval === 33499196.0
+maxval 90== 26997056.0
+scale   0.49473684210526314
+maxval === 24363360.0
+maxval 90== 27415608.0
+scale   0.45263157894736844
+maxval === 26347628.0
+maxval 90== 34479684.0
+scale   0.4105263157894737
+maxval === 20814800.0
+maxval 90== 23092258.0
+scale   0.368421052631579
+maxval === 23509862.0
+maxval 90== 22191086.0
+scale   0.3263157894736842
+maxval === 16845914.0
+maxval 90== 19584668.0
+scale   0.28421052631578947
+maxval === 24169278.0
+maxval 90== 25011490.0
+scale   0.24210526315789474
+maxval 90== 15385257.0
+scale   0.2
+scale   1.0
+maxval === 36386392.0
+maxval 90== 22716966.0
+scale   0.9578947368421054
+maxval === 31155168.0
+maxval 90== 24538848.0
+scale   0.9157894736842105
+maxval === 30782484.0
+maxval 90== 20929692.0
+scale   0.8736842105263158
+maxval === 31891352.0
+maxval 90== 26227812.0
+scale   0.831578947368421
+maxval === 21300326.0
+maxval 90== 28201394.0
+scale   0.7894736842105263
+maxval === 24993836.0
+maxval 90== 20736596.0
+scale   0.7473684210526317
+maxval === 23273442.0
+maxval 90== 23414030.0
+scale   0.7052631578947368
+maxval === 26757384.0
+maxval 90== 20178188.0
+scale   0.6631578947368422
+maxval === 26166718.0
+maxval 90== 21638970.0
+scale   0.6210526315789473
+maxval === 30470524.0
+maxval 90== 21964460.0
+scale   0.5789473684210527
+maxval === 21860160.0
+maxval 90== 18278146.0
+scale   0.5368421052631579
+maxval === 25584186.0
+maxval 90== 17433414.0
+scale   0.49473684210526314
+maxval === 30442586.0
+maxval 90== 17276758.0
+scale   0.45263157894736844
+maxval === 26158654.0
+maxval 90== 25225008.0
+scale   0.4105263157894737
+maxval === 22696200.0
+maxval 90== 14895139.0
+scale   0.368421052631579
+maxval === 15972032.0
+maxval 90== 14924445.0
+scale   0.3263157894736842
+maxval === 22987420.0
+maxval 90== 12687978.0
+scale   0.28421052631578947
+maxval === 12862983.0
+maxval 90== 13226818.0
+scale   0.24210526315789474
+maxval 90== 10287924.0
+scale   0.2
+scale   1.0
+maxval === 19590776.0
+maxval 90== 17284912.0
+scale   0.9578947368421054
+maxval === 18758942.0
+maxval 90== 17293934.0
+scale   0.9157894736842105
+maxval === 21326360.0
+maxval 90== 14776859.0
+scale   0.8736842105263158
+maxval === 16306670.0
+maxval 90== 16644571.0
+scale   0.831578947368421
+maxval === 15819405.0
+maxval 90== 16192579.0
+scale   0.7894736842105263
+maxval === 17055640.0
+maxval 90== 13304692.0
+scale   0.7473684210526317
+maxval === 17994204.0
+maxval 90== 17197014.0
+scale   0.7052631578947368
+maxval === 16519747.0
+maxval 90== 15194911.0
+scale   0.6631578947368422
+maxval === 16291495.0
+maxval 90== 13267665.0
+scale   0.6210526315789473
+maxval === 19951334.0
+maxval 90== 14502075.0
+scale   0.5789473684210527
+maxval === 17225462.0
+maxval 90== 12896132.0
+scale   0.5368421052631579
+maxval === 15076192.0
+maxval 90== 12824392.0
+scale   0.49473684210526314
+maxval === 14701076.0
+maxval 90== 14171132.0
+scale   0.45263157894736844
+maxval === 11526747.0
+maxval 90== 11279367.0
+scale   0.4105263157894737
+maxval === 9718379.0
+maxval 90== 11802274.0
+scale   0.368421052631579
+maxval 90== 13187032.0
+scale   0.3263157894736842
+maxval 90== 10008457.0
+scale   0.28421052631578947
+maxval 90== 2683064.75
+scale   0.24210526315789474
+scale   0.2
+max== 9718379.0
+4481-01C-D-E01-Elevation-B.jpg
+title   : {"x":26.08562691131497,"y":1117.896024464832,"width":669.4862385321102,"height":117.83792048929665,"rotate":0,"scaleX":1,"scaleY":1}
+title_text= UNPERFORATED SOFFIT CLADDING
+SECTION - GRIDLINE 11
+img_drawingN= 01C-D-501
+img_revsion= B
+/home/salim_nadaa/mab_app/static/img/check/
+/home/salim_nadaa/mab_app/static/img/check_convert_300/4481-01C-D-S01-Section---Gridline-11-B.jpg
+['4481-01C-D-E01-Elevation-B.jpg', 'C60298-50-M001-Mechanical-Public-Health-Services-AFC1.jpg', '16774-12.jpg', 'W7352-3-LRW-comments-A.jpg', 'LRW-7459-L(70)19-Sign-Types-C.jpg', '1409-001-Key-Elevation--Acadamy-Way-P1.jpg', '2-C2.jpg', 'NL-ISS-XX-01-DR-S-12.04_PROPOSED FIRST FLOOR PLAN (3).jpg', 'ASF21828_3010-Screen-Ref-Elevation---CW07-Elevations,-Plans-Sections-&-Details-C.jpg', '503_Door schedule_C5.jpg', '15-033(23.1)008-Structural-GA-Level-7-G.jpg', '1409-4200-LRW-comments-P1.jpg']
+scale   1.0
+maxval === 282015936.0
+maxval 90== 43109552.0
+scale   0.9578947368421054
+maxval === 66166524.0
+maxval 90== 36030056.0
+scale   0.9157894736842105
+maxval === 49112768.0
+maxval 90== 39538004.0
+scale   0.8736842105263158
+maxval === 38454664.0
+maxval 90== 41203080.0
+scale   0.831578947368421
+maxval === 32948812.0
+maxval 90== 38642072.0
+scale   0.7894736842105263
+maxval === 36258444.0
+maxval 90== 34630988.0
+scale   0.7473684210526317
+maxval === 39952100.0
+maxval 90== 35758560.0
+scale   0.7052631578947368
+maxval === 33975780.0
+maxval 90== 43146060.0
+scale   0.6631578947368422
+maxval === 32846786.0
+maxval 90== 37884672.0
+scale   0.6210526315789473
+maxval === 35054256.0
+maxval 90== 43862420.0
+scale   0.5789473684210527
+maxval === 34039584.0
+maxval 90== 33443580.0
+scale   0.5368421052631579
+maxval === 27211030.0
+maxval 90== 30127434.0
+scale   0.49473684210526314
+maxval === 25044116.0
+maxval 90== 31576462.0
+scale   0.45263157894736844
+maxval 90== 40869500.0
+scale   0.4105263157894737
+maxval 90== 24355718.0
+scale   0.368421052631579
+maxval 90== 23177874.0
+scale   0.3263157894736842
+scale   0.28421052631578947
+scale   0.24210526315789474
+scale   0.2
+scale   1.0
+maxval === 58636512.0
+maxval 90== 56830644.0
+scale   0.9578947368421054
+maxval === 53843992.0
+maxval 90== 58880448.0
+scale   0.9157894736842105
+maxval === 46915928.0
+maxval 90== 57475856.0
+scale   0.8736842105263158
+maxval === 57348956.0
+maxval 90== 56263448.0
+scale   0.831578947368421
+maxval === 42969332.0
+maxval 90== 51394492.0
+scale   0.7894736842105263
+maxval === 62909328.0
+maxval 90== 54432052.0
+scale   0.7473684210526317
+maxval === 49057596.0
+maxval 90== 58372224.0
+scale   0.7052631578947368
+maxval === 48758408.0
+maxval 90== 63657816.0
+scale   0.6631578947368422
+maxval === 47311188.0
+maxval 90== 48524460.0
+scale   0.6210526315789473
+maxval === 53247328.0
+maxval 90== 49208752.0
+scale   0.5789473684210527
+maxval 90== 52305244.0
+scale   0.5368421052631579
+maxval 90== 39606064.0
+scale   0.49473684210526314
+maxval 90== 42114088.0
+scale   0.45263157894736844
+maxval 90== 40765312.0
+scale   0.4105263157894737
+scale   0.368421052631579
+scale   0.3263157894736842
+scale   0.28421052631578947
+scale   0.24210526315789474
+scale   0.2
+scale   1.0
+maxval === 65613516.0
+maxval 90== 47751892.0
+scale   0.9578947368421054
+maxval === 58238952.0
+maxval 90== 51106680.0
+scale   0.9157894736842105
+maxval === 55902668.0
+maxval 90== 52283116.0
+scale   0.8736842105263158
+maxval === 39026132.0
+maxval 90== 47192808.0
+scale   0.831578947368421
+maxval === 56597024.0
+maxval 90== 56092364.0
+scale   0.7894736842105263
+maxval === 51799052.0
+maxval 90== 47324628.0
+scale   0.7473684210526317
+maxval === 46383320.0
+maxval 90== 39360904.0
+scale   0.7052631578947368
+maxval === 57646744.0
+maxval 90== 65086356.0
+scale   0.6631578947368422
+maxval === 47312840.0
+maxval 90== 46480400.0
+scale   0.6210526315789473
+maxval === 43324548.0
+maxval 90== 36656688.0
+scale   0.5789473684210527
+maxval === 43529012.0
+maxval 90== 47884456.0
+scale   0.5368421052631579
+maxval === 47794156.0
+maxval 90== 47947016.0
+scale   0.49473684210526314
+maxval === 49056832.0
+maxval 90== 39981840.0
+scale   0.45263157894736844
+maxval === 42969352.0
+maxval 90== 48470772.0
+scale   0.4105263157894737
+maxval 90== 15656809.0
+scale   0.368421052631579
+scale   0.3263157894736842
+scale   0.28421052631578947
+scale   0.24210526315789474
+scale   0.2
+scale   1.0
+maxval === 10955439.0
+maxval 90== 9993016.0
+scale   0.9578947368421054
+maxval === 11321383.0
+maxval 90== 11494424.0
+scale   0.9157894736842105
+maxval === 13047007.0
+maxval 90== 10296401.0
+scale   0.8736842105263158
+maxval === 10937656.0
+maxval 90== 10089305.0
+scale   0.831578947368421
+maxval === 10454523.0
+maxval 90== 10698387.0
+scale   0.7894736842105263
+maxval === 11281607.0
+maxval 90== 9713402.0
+scale   0.7473684210526317
+maxval === 10710589.0
+maxval 90== 9738554.0
+scale   0.7052631578947368
+maxval === 10018634.0
+maxval 90== 9272202.0
+scale   0.6631578947368422
+maxval === 9644625.0
+maxval 90== 10332015.0
+scale   0.6210526315789473
+maxval === 9624297.0
+maxval 90== 9868602.0
+scale   0.5789473684210527
+maxval === 9380636.0
+maxval 90== 11256339.0
+scale   0.5368421052631579
+maxval === 12628158.0
+maxval 90== 9620814.0
+scale   0.49473684210526314
+maxval === 10360502.0
+maxval 90== 9331110.0
+scale   0.45263157894736844
+maxval === 9483780.0
+maxval 90== 8174080.5
+scale   0.4105263157894737
+maxval === 8078346.0
+scale   0.368421052631579
+maxval === 8737563.0
+scale   0.3263157894736842
+maxval === 8586142.0
+scale   0.28421052631578947
+scale   0.24210526315789474
+scale   0.2
+scale   1.0
+maxval === 36578000.0
+maxval 90== 26192504.0
+scale   0.9578947368421054
+maxval === 42101960.0
+maxval 90== 32349942.0
+scale   0.9157894736842105
+maxval === 34056196.0
+maxval 90== 26582710.0
+scale   0.8736842105263158
+maxval === 28646136.0
+maxval 90== 24990166.0
+scale   0.831578947368421
+maxval === 28096634.0
+maxval 90== 23584658.0
+scale   0.7894736842105263
+maxval === 27302784.0
+maxval 90== 24152376.0
+scale   0.7473684210526317
+maxval === 27973062.0
+maxval 90== 26710174.0
+scale   0.7052631578947368
+maxval === 37874084.0
+maxval 90== 23738820.0
+scale   0.6631578947368422
+maxval === 24695158.0
+maxval 90== 27160978.0
+scale   0.6210526315789473
+maxval === 28483666.0
+maxval 90== 21442716.0
+scale   0.5789473684210527
+maxval === 23003014.0
+maxval 90== 22187298.0
+scale   0.5368421052631579
+maxval === 30743384.0
+maxval 90== 19774462.0
+scale   0.49473684210526314
+maxval === 27171724.0
+maxval 90== 22234972.0
+scale   0.45263157894736844
+maxval === 20765374.0
+maxval 90== 27980294.0
+scale   0.4105263157894737
+maxval === 20947298.0
+maxval 90== 17997248.0
+scale   0.368421052631579
+maxval === 19233288.0
+maxval 90== 19230798.0
+scale   0.3263157894736842
+maxval 90== 11723258.0
+scale   0.28421052631578947
+maxval 90== 15956083.0
+scale   0.24210526315789474
+maxval 90== 5168272.5
+scale   0.2
+scale   1.0
+maxval === 20667106.0
+maxval 90== 18053070.0
+scale   0.9578947368421054
+maxval === 18542966.0
+maxval 90== 14925839.0
+scale   0.9157894736842105
+maxval === 18868090.0
+maxval 90== 15146731.0
+scale   0.8736842105263158
+maxval === 20374506.0
+maxval 90== 16881478.0
+scale   0.831578947368421
+maxval === 18001078.0
+maxval 90== 17632584.0
+scale   0.7894736842105263
+maxval === 19919316.0
+maxval 90== 14695277.0
+scale   0.7473684210526317
+maxval === 20927212.0
+maxval 90== 14476397.0
+scale   0.7052631578947368
+maxval === 24449396.0
+maxval 90== 15927072.0
+scale   0.6631578947368422
+maxval === 16061172.0
+maxval 90== 17999172.0
+scale   0.6210526315789473
+maxval === 18954794.0
+maxval 90== 16394805.0
+scale   0.5789473684210527
+maxval === 17545902.0
+maxval 90== 14836252.0
+scale   0.5368421052631579
+maxval === 17871038.0
+maxval 90== 13590255.0
+scale   0.49473684210526314
+maxval === 17925228.0
+maxval 90== 12960509.0
+scale   0.45263157894736844
+maxval === 14630627.0
+maxval 90== 12797365.0
+scale   0.4105263157894737
+maxval === 18434592.0
+maxval 90== 13577430.0
+scale   0.368421052631579
+maxval 90== 11625201.0
+scale   0.3263157894736842
+maxval 90== 8156208.0
+scale   0.28421052631578947
+maxval 90== 6866522.5
+scale   0.24210526315789474
+scale   0.2
+scale   1.0
+maxval === 41695748.0
+maxval 90== 46354256.0
+scale   0.9578947368421054
+maxval === 49638512.0
+maxval 90== 48326884.0
+scale   0.9157894736842105
+maxval === 41221232.0
+maxval 90== 49324268.0
+scale   0.8736842105263158
+maxval === 38724336.0
+maxval 90== 40351068.0
+scale   0.831578947368421
+maxval === 39566720.0
+maxval 90== 37850584.0
+scale   0.7894736842105263
+maxval === 42927832.0
+maxval 90== 39087364.0
+scale   0.7473684210526317
+maxval === 43011136.0
+maxval 90== 38856168.0
+scale   0.7052631578947368
+maxval === 41961224.0
+maxval 90== 38353884.0
+scale   0.6631578947368422
+maxval === 35635172.0
+maxval 90== 44959712.0
+scale   0.6210526315789473
+maxval === 34951388.0
+maxval 90== 39546748.0
+scale   0.5789473684210527
+maxval === 31816124.0
+maxval 90== 37632448.0
+scale   0.5368421052631579
+maxval === 34963572.0
+maxval 90== 40352096.0
+scale   0.49473684210526314
+maxval === 32602654.0
+maxval 90== 31977490.0
+scale   0.45263157894736844
+maxval 90== 30666566.0
+scale   0.4105263157894737
+scale   0.368421052631579
+scale   0.3263157894736842
+scale   0.28421052631578947
+scale   0.24210526315789474
+scale   0.2
+scale   1.0
+maxval === 11163237.0
+maxval 90==DEBUG:PIL.PngImagePlugin:STREAM b'IHDR' 16 13
+DEBUG:PIL.PngImagePlugin:STREAM b'IDAT' 41 5781
+DEBUG:PIL.PngImagePlugin:STREAM b'IHDR' 16 13
+DEBUG:PIL.PngImagePlugin:STREAM b'IDAT' 41 1273
+DEBUG:PIL.PngImagePlugin:STREAM b'IHDR' 16 13
+DEBUG:PIL.PngImagePlugin:STREAM b'IDAT' 41 276
+INFO:werkzeug:129.45.91.41 - - [23/Apr/2019 23:29:28] "POST /check HTTP/1.1" 200 -
+INFO:werkzeug:129.45.91.41 - - [23/Apr/2019 23:29:30] "GET /static/css/bootstrap.css HTTP/1.1" 304 -
+INFO:werkzeug:129.45.91.41 - - [23/Apr/2019 23:29:30] "GET /static/img/title.jpg HTTP/1.1" 200 -
+INFO:werkzeug:129.45.91.41 - - [23/Apr/2019 23:29:30] "GET /static/img/drawing_number.jpg HTTP/1.1" 200 -
+INFO:werkzeug:129.45.91.41 - - [23/Apr/2019 23:29:30] "GET /static/img/revision.jpg HTTP/1.1" 200 -
+ 10176922.0
+scale   0.9578947368421054
+maxval === 11173404.0
+maxval 90== 10551774.0
+scale   0.9157894736842105
+maxval === 11308684.0
+maxval 90== 10845788.0
+scale   0.8736842105263158
+maxval === 14047044.0
+maxval 90== 9910321.0
+scale   0.831578947368421
+maxval === 12294740.0
+maxval 90== 10225626.0
+scale   0.7894736842105263
+maxval === 11602837.0
+maxval 90== 10099786.0
+scale   0.7473684210526317
+maxval === 10920105.0
+maxval 90== 11448100.0
+scale   0.7052631578947368
+maxval === 12504040.0
+maxval 90== 9847204.0
+scale   0.6631578947368422
+maxval === 11517698.0
+maxval 90== 9195428.0
+scale   0.6210526315789473
+maxval === 13994272.0
+maxval 90== 10823731.0
+scale   0.5789473684210527
+maxval === 10811418.0
+maxval 90== 9309156.0
+scale   0.5368421052631579
+maxval === 13545448.0
+maxval 90== 10471066.0
+scale   0.49473684210526314
+maxval === 10505234.0
+maxval 90== 8920536.0
+scale   0.45263157894736844
+maxval === 9656256.0
+maxval 90== 9728378.0
+scale   0.4105263157894737
+maxval === 9965583.0
+maxval 90== 9068436.0
+scale   0.368421052631579
+maxval === 9532836.0
+maxval 90== 8797118.0
+scale   0.3263157894736842
+maxval === 9955582.0
+maxval 90== 7697304.5
+scale   0.28421052631578947
+maxval === 7689991.5
+maxval 90== 8853599.0
+scale   0.24210526315789474
+maxval === 5896662.5
+maxval 90== 8646414.0
+scale   0.2
+maxval === 5576767.0
+maxval 90== 8578076.0
+scale   1.0
+maxval === 55675600.0
+maxval 90== 54044428.0
+scale   0.9578947368421054
+maxval === 62452904.0
+maxval 90== 51902880.0
+scale   0.9157894736842105
+maxval === 64747400.0
+maxval 90== 44775660.0
+scale   0.8736842105263158
+maxval === 44966388.0
+maxval 90== 46871068.0
+scale   0.831578947368421
+maxval === 44561824.0
+maxval 90== 46461120.0
+scale   0.7894736842105263
+maxval === 54198244.0
+maxval 90== 48400300.0
+scale   0.7473684210526317
+maxval === 47654764.0
+maxval 90== 44686000.0
+scale   0.7052631578947368
+maxval === 46320900.0
+maxval 90== 41464744.0
+scale   0.6631578947368422
+maxval === 44633928.0
+maxval 90== 42986820.0
+scale   0.6210526315789473
+maxval === 44164504.0
+maxval 90== 43790888.0
+scale   0.5789473684210527
+maxval === 34221468.0
+maxval 90== 34698932.0
+scale   0.5368421052631579
+maxval === 33098060.0
+maxval 90== 34017308.0
+scale   0.49473684210526314
+maxval === 26769502.0
+maxval 90== 39204904.0
+scale   0.45263157894736844
+maxval 90== 31481416.0
+scale   0.4105263157894737
+maxval 90== 31641070.0
+scale   0.368421052631579
+scale   0.3263157894736842
+scale   0.28421052631578947
+scale   0.24210526315789474
+scale   0.2
+scale   1.0
+maxval === 38601184.0
+maxval 90== 28498796.0
+scale   0.9578947368421054
+maxval === 37074684.0
+maxval 90== 29121528.0
+scale   0.9157894736842105
+maxval === 33746840.0
+maxval 90== 30097430.0
+scale   0.8736842105263158
+maxval === 31804144.0
+maxval 90== 31320452.0
+scale   0.831578947368421
+maxval === 30629876.0
+maxval 90== 28278842.0
+scale   0.7894736842105263
+maxval === 32863762.0
+maxval 90== 28022752.0
+scale   0.7473684210526317
+maxval === 30074688.0
+maxval 90== 33351572.0
+scale   0.7052631578947368
+maxval === 33366156.0
+maxval 90== 26839784.0
+scale   0.6631578947368422
+maxval === 27362098.0
+maxval 90== 32585802.0
+scale   0.6210526315789473
+maxval === 32204342.0
+maxval 90== 29003240.0
+scale   0.5789473684210527
+maxval === 29292334.0
+maxval 90== 31406750.0
+scale   0.5368421052631579
+maxval === 33499196.0
+maxval 90== 26997056.0
+scale   0.49473684210526314
+maxval === 24363360.0
+maxval 90== 27415608.0
+scale   0.45263157894736844
+maxval === 26347628.0
+maxval 90== 34479684.0
+scale   0.4105263157894737
+maxval === 20814800.0
+maxval 90== 23092258.0
+scale   0.368421052631579
+maxval === 23509862.0
+maxval 90== 22191086.0
+scale   0.3263157894736842
+maxval === 16845914.0
+maxval 90== 19584668.0
+scale   0.28421052631578947
+maxval === 24169278.0
+maxval 90== 25011490.0
+scale   0.24210526315789474
+maxval 90== 15385257.0
+scale   0.2
+scale   1.0
+maxval === 36386392.0
+maxval 90== 22716966.0
+scale   0.9578947368421054
+maxval === 31155168.0
+maxval 90== 24538848.0
+scale   0.9157894736842105
+maxval === 30782484.0
+maxval 90== 20929692.0
+scale   0.8736842105263158
+maxval === 31891352.0
+maxval 90== 26227812.0
+scale   0.831578947368421
+maxval === 21300326.0
+maxval 90== 28201394.0
+scale   0.7894736842105263
+maxval === 24993836.0
+maxval 90== 20736596.0
+scale   0.7473684210526317
+maxval === 23273442.0
+maxval 90== 23414030.0
+scale   0.7052631578947368
+maxval === 26757384.0
+maxval 90== 20178188.0
+scale   0.6631578947368422
+maxval === 26166718.0
+maxval 90== 21638970.0
+scale   0.6210526315789473
+maxval === 30470524.0
+maxval 90== 21964460.0
+scale   0.5789473684210527
+maxval === 21860160.0
+maxval 90== 18278146.0
+scale   0.5368421052631579
+maxval === 25584186.0
+maxval 90== 17433414.0
+scale   0.49473684210526314
+maxval === 30442586.0
+maxval 90== 17276758.0
+scale   0.45263157894736844
+maxval === 26158654.0
+maxval 90== 25225008.0
+scale   0.4105263157894737
+maxval === 22696200.0
+maxval 90== 14895139.0
+scale   0.368421052631579
+maxval === 15972032.0
+maxval 90== 14924445.0
+scale   0.3263157894736842
+maxval === 22987420.0
+maxval 90== 12687978.0
+scale   0.28421052631578947
+maxval === 12862983.0
+maxval 90== 13226818.0
+scale   0.24210526315789474
+maxval 90== 10287924.0
+scale   0.2
+scale   1.0
+maxval === 19590776.0
+maxval 90== 17284912.0
+scale   0.9578947368421054
+maxval === 18758942.0
+maxval 90== 17293934.0
+scale   0.9157894736842105
+maxval === 21326360.0
+maxval 90== 14776859.0
+scale   0.8736842105263158
+maxval === 16306670.0
+maxval 90== 16644571.0
+scale   0.831578947368421
+maxval === 15819405.0
+maxval 90== 16192579.0
+scale   0.7894736842105263
+maxval === 17055640.0
+maxval 90== 13304692.0
+scale   0.7473684210526317
+maxval === 17994204.0
+maxval 90== 17197014.0
+scale   0.7052631578947368
+maxval === 16519747.0
+maxval 90== 15194911.0
+scale   0.6631578947368422
+maxval === 16291495.0
+maxval 90== 13267665.0
+scale   0.6210526315789473
+maxval === 19951334.0
+maxval 90== 14502075.0
+scale   0.5789473684210527
+maxval === 17225462.0
+maxval 90== 12896132.0
+scale   0.5368421052631579
+maxval === 15076192.0
+maxval 90== 12824392.0
+scale   0.49473684210526314
+maxval === 14701076.0
+maxval 90== 14171132.0
+scale   0.45263157894736844
+maxval === 11526747.0
+maxval 90== 11279367.0
+scale   0.4105263157894737
+maxval === 9718379.0
+maxval 90== 11802274.0
+scale   0.368421052631579
+maxval 90== 13187032.0
+scale   0.3263157894736842
+maxval 90== 10008457.0
+scale   0.28421052631578947
+maxval 90== 2683064.75
+scale   0.24210526315789474
+scale   0.2
+max== 9718379.0
+4481-01C-D-E01-Elevation-B.jpg
+title   : {"x":26.08562691131497,"y":1117.896024464832,"width":669.4862385321102,"height":117.83792048929665,"rotate":0,"scaleX":1,"scaleY":1}
+title_text= UNPERFORATED SOFFIT CLADDING
+SECTION - GRIDLINE 11
+img_drawingN= 01C-D-501
+img_revsion= B
+/home/salim_nadaa/mab_app/static/img/check/
+/home/salim_nadaa/mab_app/static/img/check_convert_300/4481-01C-D-S01-Section---Gridline-11-B.jpg
+['4481-01C-D-E01-Elevation-B.jpg', 'C60298-50-M001-Mechanical-Public-Health-Services-AFC1.jpg', '16774-12.jpg', 'W7352-3-LRW-comments-A.jpg', 'LRW-7459-L(70)19-Sign-Types-C.jpg', '1409-001-Key-Elevation--Acadamy-Way-P1.jpg', '2-C2.jpg', 'NL-ISS-XX-01-DR-S-12.04_PROPOSED FIRST FLOOR PLAN (3).jpg', 'ASF21828_3010-Screen-Ref-Elevation---CW07-Elevations,-Plans-Sections-&-Details-C.jpg', '503_Door schedule_C5.jpg', '15-033(23.1)008-Structural-GA-Level-7-G.jpg', '1409-4200-LRW-comments-P1.jpg']
+scale   1.0
+maxval === 282015936.0
+maxval 90== 43109552.0
+scale   0.9578947368421054
+maxval === 66166524.0
+maxval 90== 36030056.0
+scale   0.9157894736842105
+maxval === 49112768.0
+maxval 90== 39538004.0
+scale   0.8736842105263158
+maxval === 38454664.0
+maxval 90== 41203080.0
+scale   0.831578947368421
+maxval === 32948812.0
+maxval 90== 38642072.0
+scale   0.7894736842105263
+maxval === 36258444.0
+maxval 90== 34630988.0
+scale   0.7473684210526317
+maxval === 39952100.0
+maxval 90== 35758560.0
+scale   0.7052631578947368
+maxval === 33975780.0
+maxval 90== 43146060.0
+scale   0.6631578947368422
+maxval === 32846786.0
+maxval 90== 37884672.0
+scale   0.6210526315789473
+maxval === 35054256.0
+maxval 90== 43862420.0
+scale   0.5789473684210527
+maxval === 34039584.0
+maxval 90== 33443580.0
+scale   0.5368421052631579
+maxval === 27211030.0
+maxval 90== 30127434.0
+scale   0.49473684210526314
+maxval === 25044116.0
+maxval 90== 31576462.0
+scale   0.45263157894736844
+maxval 90== 40869500.0
+scale   0.4105263157894737
+maxval 90== 24355718.0
+scale   0.368421052631579
+maxval 90== 23177874.0
+scale   0.3263157894736842
+scale   0.28421052631578947
+scale   0.24210526315789474
+scale   0.2
+scale   1.0
+maxval === 58636512.0
+maxval 90== 56830644.0
+scale   0.9578947368421054
+maxval === 53843992.0
+maxval 90== 58880448.0
+scale   0.9157894736842105
+maxval === 46915928.0
+maxval 90== 57475856.0
+scale   0.8736842105263158
+maxval === 57348956.0
+maxval 90== 56263448.0
+scale   0.831578947368421
+maxval === 42969332.0
+maxval 90== 51394492.0
+scale   0.7894736842105263
+maxval === 62909328.0
+maxval 90== 54432052.0
+scale   0.7473684210526317
+maxval === 49057596.0
+maxval 90== 58372224.0
+scale   0.7052631578947368
+maxval === 48758408.0
+maxval 90== 63657816.0
+scale   0.6631578947368422
+maxval === 47311188.0
+maxval 90== 48524460.0
+scale   0.6210526315789473
+maxval === 53247328.0
+maxval 90== 49208752.0
+scale   0.5789473684210527
+maxval 90== 52305244.0
+scale   0.5368421052631579
+maxval 90== 39606064.0
+scale   0.49473684210526314
+maxval 90== 42114088.0
+scale   0.45263157894736844
+maxval 90== 40765312.0
+scale   0.4105263157894737
+scale   0.368421052631579
+scale   0.3263157894736842
+scale   0.28421052631578947
+scale   0.24210526315789474
+scale   0.2
+scale   1.0
+maxval === 65613516.0
+maxval 90== 47751892.0
+scale   0.9578947368421054
+maxval === 58238952.0
+maxval 90== 51106680.0
+scale   0.9157894736842105
+maxval === 55902668.0
+maxval 90== 52283116.0
+scale   0.8736842105263158
+maxval === 39026132.0
+maxval 90== 47192808.0
+scale   0.831578947368421
+maxval === 56597024.0
+maxval 90== 56092364.0
+scale   0.7894736842105263
+maxval === 51799052.0
+maxval 90== 47324628.0
+scale   0.7473684210526317
+maxval === 46383320.0
+maxval 90== 39360904.0
+scale   0.7052631578947368
+maxval === 57646744.0
+maxval 90== 65086356.0
+scale   0.6631578947368422
+maxval === 47312840.0
+maxval 90== 46480400.0
+scale   0.6210526315789473
+maxval === 43324548.0
+maxval 90== 36656688.0
+scale   0.5789473684210527
+maxval === 43529012.0
+maxval 90== 47884456.0
+scale   0.5368421052631579
+maxval === 47794156.0
+maxval 90== 47947016.0
+scale   0.49473684210526314
+maxval === 49056832.0
+maxval 90== 39981840.0
+scale   0.45263157894736844
+maxval === 42969352.0
+maxval 90== 48470772.0
+scale   0.4105263157894737
+maxval 90== 15656809.0
+scale   0.368421052631579
+scale   0.3263157894736842
+scale   0.28421052631578947
+scale   0.24210526315789474
+scale   0.2
+scale   1.0
+maxval === 10955439.0
+maxval 90== 9993016.0
+scale   0.9578947368421054
+maxval === 11321383.0
+maxval 90== 11494424.0
+scale   0.9157894736842105
+maxval === 13047007.0
+maxval 90== 10296401.0
+scale   0.8736842105263158
+maxval === 10937656.0
+maxval 90== 10089305.0
+scale   0.831578947368421
+maxval === 10454523.0
+maxval 90== 10698387.0
+scale   0.7894736842105263
+maxval === 11281607.0
+maxval 90== 9713402.0
+scale   0.7473684210526317
+maxval === 10710589.0
+maxval 90== 9738554.0
+scale   0.7052631578947368
+maxval === 10018634.0
+maxval 90== 9272202.0
+scale   0.6631578947368422
+maxval === 9644625.0
+maxval 90== 10332015.0
+scale   0.6210526315789473
+maxval === 9624297.0
+maxval 90== 9868602.0
+scale   0.5789473684210527
+maxval === 9380636.0
+maxval 90== 11256339.0
+scale   0.5368421052631579
+maxval === 12628158.0
+maxval 90== 9620814.0
+scale   0.49473684210526314
+maxval === 10360502.0
+maxval 90== 9331110.0
+scale   0.45263157894736844
+maxval === 9483780.0
+maxval 90== 8174080.5
+scale   0.4105263157894737
+maxval === 8078346.0
+scale   0.368421052631579
+maxval === 8737563.0
+scale   0.3263157894736842
+maxval === 8586142.0
+scale   0.28421052631578947
+scale   0.24210526315789474
+scale   0.2
+scale   1.0
+maxval === 36578000.0
+maxval 90== 26192504.0
+scale   0.9578947368421054
+maxval === 42101960.0
+maxval 90== 32349942.0
+scale   0.9157894736842105
+maxval === 34056196.0
+maxval 90== 26582710.0
+scale   0.8736842105263158
+maxval === 28646136.0
+maxval 90== 24990166.0
+scale   0.831578947368421
+maxval === 28096634.0
+maxval 90== 23584658.0
+scale   0.7894736842105263
+maxval === 27302784.0
+maxval 90== 24152376.0
+scale   0.7473684210526317
+maxval === 27973062.0
+maxval 90== 26710174.0
+scale   0.7052631578947368
+maxval === 37874084.0
+maxval 90== 23738820.0
+scale   0.6631578947368422
+maxval === 24695158.0
+maxval 90== 27160978.0
+scale   0.6210526315789473
+maxval === 28483666.0
+maxval 90== 21442716.0
+scale   0.5789473684210527
+maxval === 23003014.0
+maxval 90== 22187298.0
+scale   0.5368421052631579
+maxval === 30743384.0
+maxval 90== 19774462.0
+scale   0.49473684210526314
+maxval === 27171724.0
+maxval 90== 22234972.0
+scale   0.45263157894736844
+maxval === 20765374.0
+maxval 90== 27980294.0
+scale   0.4105263157894737
+maxval === 20947298.0
+maxval 90== 17997248.0
+scale   0.368421052631579
+maxval === 19233288.0
+maxval 90== 19230798.0
+scale   0.3263157894736842
+maxval 90== 11723258.0
+scale   0.28421052631578947
+maxval 90== 15956083.0
+scale   0.24210526315789474
+maxval 90== 5168272.5
+scale   0.2
+scale   1.0
+maxval === 20667106.0
+maxval 90== 18053070.0
+scale   0.9578947368421054
+maxval === 18542966.0
+maxval 90== 14925839.0
+scale   0.9157894736842105
+maxval === 18868090.0
+maxval 90== 15146731.0
+scale   0.8736842105263158
+maxval === 20374506.0
+maxval 90== 16881478.0
+scale   0.831578947368421
+maxval === 18001078.0
+maxval 90== 17632584.0
+scale   0.7894736842105263
+maxval === 19919316.0
+maxval 90== 14695277.0
+scale   0.7473684210526317
+maxval === 20927212.0
+maxval 90== 14476397.0
+scale   0.7052631578947368
+maxval === 24449396.0
+maxval 90== 15927072.0
+scale   0.6631578947368422
+maxval === 16061172.0
+maxval 90== 17999172.0
+scale   0.6210526315789473
+maxval === 18954794.0
+maxval 90== 16394805.0
+scale   0.5789473684210527
+maxval === 17545902.0
+maxval 90== 14836252.0
+scale   0.5368421052631579
+maxval === 17871038.0
+maxval 90== 13590255.0
+scale   0.49473684210526314
+maxval === 17925228.0
+maxval 90== 12960509.0
+scale   0.45263157894736844
+maxval === 14630627.0
+maxval 90== 12797365.0
+scale   0.4105263157894737
+maxval === 18434592.0
+maxval 90== 13577430.0
+scale   0.368421052631579
+maxval 90== 11625201.0
+scale   0.3263157894736842
+maxval 90== 8156208.0
+scale   0.28421052631578947
+maxval 90== 6866522.5
+scale   0.24210526315789474
+scale   0.2
+scale   1.0
+maxval === 41695748.0
+maxval 90== 46354256.0
+scale   0.9578947368421054
+maxval === 49638512.0
+maxval 90== 48326884.0
+scale   0.9157894736842105
+maxval === 41221232.0
+maxval 90== 49324268.0
+scale   0.8736842105263158
+maxval === 38724336.0
+maxval 90== 40351068.0
+scale   0.831578947368421
+maxval === 39566720.0
+maxval 90== 37850584.0
+scale   0.7894736842105263
+maxval === 42927832.0
+maxval 90== 39087364.0
+scale   0.7473684210526317
+maxval === 43011136.0
+maxval 90== 38856168.0
+scale   0.7052631578947368
+maxval === 41961224.0
+maxval 90== 38353884.0
+scale   0.6631578947368422
+maxval === 35635172.0
+maxval 90== 44959712.0
+scale   0.6210526315789473
+maxval === 34951388.0
+maxval 90== 39546748.0
+scale   0.5789473684210527
+maxval === 31816124.0
+maxval 90== 37632448.0
+scale   0.5368421052631579
+maxval === 34963572.0
+maxval 90== 40352096.0
+scale   0.49473684210526314
+maxval === 32602654.0
+maxval 90== 31977490.0
+scale   0.45263157894736844
+maxval 90== 30666566.0
+scale   0.4105263157894737
+scale   0.368421052631579
+scale   0.3263157894736842
+scale   0.28421052631578947
+scale   0.24210526315789474
+scale   0.2
+scale   1.0
+maxval === 11163237.0
+maxval 90== 10176922.0
+scale   0.9578947368421054
+maxval === 11173404.0
+maxval 90== 10551774.0
+scale   0.9157894736842105
+maxval === 11308684.0
+maxval 90== 10845788.0
+scale   0.8736842105263158
+maxval === 14047044.0
+maxval 90== 9910321.0
+scale   0.831578947368421
+maxval === 12294740.0
+maxval 90== 10225626.0
+scale   0.7894736842105263
+maxval === 11602837.0
+maxval 90== 10099786.0
+scale   0.7473684210526317
+maxval === 10920105.0
+maxval 90== 11448100.0
+scale   0.7052631578947368
+maxval === 12504040.0
+maxval 90== 9847204.0
+scale   0.6631578947368422
+maxval === 11517698.0
+maxval 90== 9195428.0
+scale   0.6210526315789473
+maxval === 13994272.0
+maxval 90== 10823731.0
+scale   0.5789473684210527
+maxval === 10811418.0
+maxval 90== 9309156.0
+scale  DEBUG:PIL.PngImagePlugin:STREAM b'IHDR' 16 13
+DEBUG:PIL.PngImagePlugin:STREAM b'IDAT' 41 5781
+DEBUG:PIL.PngImagePlugin:STREAM b'IHDR' 16 13
+DEBUG:PIL.PngImagePlugin:STREAM b'IDAT' 41 1273
+DEBUG:PIL.PngImagePlugin:STREAM b'IHDR' 16 13
+DEBUG:PIL.PngImagePlugin:STREAM b'IDAT' 41 276
+INFO:werkzeug:129.45.91.41 - - [23/Apr/2019 23:31:38] "POST /check HTTP/1.1" 200 -
+INFO:werkzeug:129.45.91.41 - - [23/Apr/2019 23:31:39] "GET /static/css/bootstrap.css HTTP/1.1" 304 -
+INFO:werkzeug:129.45.91.41 - - [23/Apr/2019 23:31:39] "GET /static/img/title.jpg HTTP/1.1" 200 -
+INFO:werkzeug:129.45.91.41 - - [23/Apr/2019 23:31:39] "GET /static/img/drawing_number.jpg HTTP/1.1" 200 -
+INFO:werkzeug:129.45.91.41 - - [23/Apr/2019 23:31:39] "GET /static/img/revision.jpg HTTP/1.1" 200 -
+INFO:werkzeug:78.186.4.22 - - [24/Apr/2019 00:13:24] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:198.108.66.128 - - [24/Apr/2019 02:48:25] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:185.173.35.9 - - [24/Apr/2019 02:49:06] "GET / HTTP/1.0" 200 -
+INFO:werkzeug:200.18.112.29 - - [24/Apr/2019 05:15:55] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:43.240.103.228 - - [24/Apr/2019 06:06:06] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:200.105.239.94 - - [24/Apr/2019 08:09:15] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:67.247.131.60 - - [24/Apr/2019 08:27:24] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:177.45.181.228 - - [24/Apr/2019 08:39:32] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:177.45.181.228 - - [24/Apr/2019 08:39:32] "GET / HTTP/1.1" 200 -
+ERROR:werkzeug:45.227.255.99 - - [24/Apr/2019 09:18:31] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie:')
+INFO:werkzeug:45.227.255.99 - - [24/Apr/2019 09:18:31] "  /*à     Cookie: mstshash=Administr" HTTPStatus.BAD_REQUEST -
+INFO:werkzeug:181.192.2.173 - - [24/Apr/2019 10:31:24] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:78.187.169.116 - - [24/Apr/2019 11:25:46] "GET / HTTP/1.0" 200 -
+INFO:werkzeug:71.6.232.4 - - [24/Apr/2019 12:48:27] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:185.84.84.236 - - [24/Apr/2019 14:35:50] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:58.136.129.81 - - [24/Apr/2019 15:28:40] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:104.152.52.30 - - [24/Apr/2019 15:32:51] "GET / HTTP/1.0" 200 -
+INFO:werkzeug:177.102.124.25 - - [24/Apr/2019 16:27:28] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:51.75.202.92 - - [24/Apr/2019 19:31:42] "GET /manager/html HTTP/1.1" 404 -
+INFO:werkzeug:95.47.51.194 - - [24/Apr/2019 21:48:47] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:139.162.119.197 - - [24/Apr/2019 23:37:46] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:201.27.159.23 - - [25/Apr/2019 00:03:00] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:209.17.97.26 - - [25/Apr/2019 00:14:57] "GET / HTTP/1.0" 200 -
+INFO:werkzeug:154.121.7.49 - - [25/Apr/2019 00:26:03] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:154.121.7.49 - - [25/Apr/2019 00:26:04] "GET /static/assets/css/Header-Nightsky.css HTTP/1.1" 304 -
+INFO:werkzeug:154.121.7.49 - - [25/Apr/2019 00:26:04] "GET /static/assets/style.css HTTP/1.1" 304 -
+INFO:werkzeug:154.121.7.49 - - [25/Apr/2019 00:26:04] "GET /static/assets/css/font-awesome.min.css HTTP/1.1" 304 -
+INFO:werkzeug:154.121.7.49 - - [25/Apr/2019 00:26:04] "GET /static/assets/img/nightsky.jpg HTTP/1.1" 304 -
+INFO:werkzeug:154.121.7.49 - - [25/Apr/2019 00:26:04] "GET /favicon.ico HTTP/1.1" 404 -
+INFO:werkzeug:190.104.18.58 - - [25/Apr/2019 02:04:56] "GET / HTTP/1.1" 200 -
+ * Serving Flask app "app2" (lazy loading)
+ * Environment: production
+   WARNING: Do not use the development server in a production environment.
+   Use a production WSGI server instead.
+ * Debug mode: on
+INFO:werkzeug: * Running on http://0.0.0.0:80/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 248-377-634
+the input device is not a TTY
+INFO:werkzeug:103.249.242.13 - - [25/Apr/2019 02:55:07] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:176.221.122.105 - - [25/Apr/2019 03:47:42] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:77.157.30.4 - - [25/Apr/2019 03:51:07] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:177.190.69.225 - - [25/Apr/2019 04:37:15] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:60.191.38.77 - - [25/Apr/2019 05:28:14] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:98.102.135.162 - - [25/Apr/2019 05:31:17] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:138.204.132.194 - - [25/Apr/2019 07:01:30] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:203.190.43.46 - - [25/Apr/2019 09:08:11] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:46.174.0.167 - - [25/Apr/2019 11:05:58] "GET / HTTP/1.1" 200 -
