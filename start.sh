@@ -1,1 +1,1 @@
-/usr/bin/python3.6 app2.py
+python3  app2.py

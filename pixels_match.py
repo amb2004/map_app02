@@ -26,7 +26,37 @@ from scipy.ndimage import rotate
 import json
 import pytesseract
 from PIL import Image
+import base64
+import requests
+import json
+from collections import namedtuple
+Rectangle = namedtuple('Rectangle', 'xmin ymin xmax ymax')
 
+def area(a, b):  # returns None if rectangles don't intersect
+    dx = min(a.xmax, b.xmax) - max(a.xmin, b.xmin)
+    dy = min(a.ymax, b.ymax) - max(a.ymin, b.ymin)
+    if (dx>=0) and (dy>=0):
+        return dx*dy
+def takeFirst(elem):
+    return elem['x_start']
+#image to base64, which is a long long text
+def encode_image(image_path):
+    with open(image_path, "rb") as image_file:
+        return base64.b64encode(image_file.read())
+
+#make api call
+def image_request(image_path):
+    
+    url = "https://vision.googleapis.com/v1/images:annotate"
+    
+    querystring = {"key":"AIzaSyBB9VeUNjoOjSmn10WbO9aNxEmIHfiCewc"}
+    headers = {
+            'Content-Type': "application/json",
+            }
+    payload = '{  \"requests\":[    {      \"image\":{        \"content\":\"'+encode_image(image_path).decode('utf-8')+'"      },      \"features\":[        {          \"type\":\"TEXT_DETECTION\" }      ]    }  ]}'
+    response = requests.request("POST", url, data=payload, headers=headers, params=querystring)
+                            
+    return response.text
 def sub_image(image, o,save_path):
     image = cv2.imread(image)
 
@@ -194,69 +224,84 @@ def get_rect(data_):
     y_end=y_start+int(data_['height'])
     rotate=int(data_['rotate'])
     return x_start,y_start,x_end,y_end,rotate    
+
+def get_rect_2(data_,scale_h,scale_w):
+#    print(data_)
+    data_=json.loads(data_)
+    x_start=int(data_['x'])*scale_w
+    y_start=int(data_['y'])*scale_w
+    x_end=(x_start+int(data_['width']))*scale_h
+    y_end=(y_start+int(data_['height']))*scale_h
+    rotate=int(data_['rotate'])
+    return x_start,y_start,x_end,y_end,rotate
+
+
+
+def ocr_google(image):
+    
+
+        api_answer = json.loads(image_request(image))
+        
+        try:
+            rows = api_answer['responses'][0]['textAnnotations']
+
+        except:
+            print('----Error API Google------------')
+            print(api_answer)
+        rwd_list=[]
+
+        for k in range(1,len(rows)):
+            rw=rows[k]
+            rwd_min=rw['boundingPoly']['vertices'][0]
+            rwd_max=rw['boundingPoly']['vertices'][2]
+            try:
+                x_min=rwd_min['x']
+            except:
+                x_min=0
+            try:
+                y_min=rwd_min['y']
+            except:
+                y_min=0
+        
+            rwd={'x_start':x_min,
+                 'y_start':y_min,
+                 'x_end':rwd_max['x'],
+                 'y_end':rwd_max['y'],
+                 'description':rw['description']
+                 }
+            rwd_list.append(rwd)
+            takeFirst
+            rwd_list.sort(key=takeFirst)
+            
+        return rwd_list
+            
+def text_field(ra_logo,rwd_list):
+    description=''
+    for rwd in  rwd_list:
+           rb_img_process=Rectangle(rwd['x_start'],rwd['y_start'],rwd['x_end'],rwd['y_end'])
+           rsl=area(ra_logo, rb_img_process)
+           if rsl:
+               #print (area(ra_logo, rb_img_process))
+               #print(rwd['description'])
+               description=description+rwd['description']+' '
+    return description            
 def ocr(image,path_main,psm):
-#        path_img=path+'wline/'+'_'+name
-#        print('#######################################################')
-#        print(path_img)
-#             path_main='G:/appdraw_v01/mab_app/static/img'
-#             path_img= path_main+'/title.jpg'
-#             path_img =path_main+'/drawing_number.jpg'
-#             path_img =path_main+'/revision.jpg'
-#
-#
-#            image = cv2.imread(path_img)
-#        name_txt=path_img.replace('.png','.txt')
+
         gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
-         
-        # check to see if we should apply thresholding to preprocess the
-        # image
-        #if args["preprocess"] == "thresh":
-        #gray = cv2.threshold(gray, 0, 255,cv2.THRESH_BINARY | cv2.THRESH_OTSU)[1]
-         
-        # make a check to see if median blurring should be done to remove
-        # noise
-        #elif args["preprocess"] == "blur":
-        #gray = cv2.medianBlur(gray,3 )
-         
-        # write the grayscale image to disk as a temporary file so we can
-        # apply OCR to it
-#        filename = "{}.png".format(os.getpid())
-#       cv2.imwrite(path_main+'/'+str(filename), gray)
+
         
 
-    # Apply dilation and erosion to remove some noise
         kernel = np.ones((2, 2), np.uint8)
         img = cv2.dilate(gray, kernel, iterations=1)
         img = cv2.erode(img, kernel, iterations=1)
-    # # Apply blur to smooth out the edges
-#        img = cv2.GaussianBlur(img, (5, 5), 0)
-    # # Apply threshold to get image with only b&w (binarization)
-#        img = cv2.threshold(img, 0, 255, cv2.THRESH_BINARY + cv2.THRESH_OTSU)[1]
-    # # Save the filtered image in the output directory
         filename = "{}.png".format(os.getpid())
         cv2.imwrite(path_main+'/'+str(filename), img)
         tessdata_dir_config = '--oem 3 --psm {} --c tessedit_char_whitelist=01234567890ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz@ß€!$%&/()=?+-.,;:<>'.format(psm)
 
-
-
-
-#        im = Image.open(path_img) # the second one 
-#        im = im.filter(ImageFilter.MedianFilter())
-#        enhancer = ImageEnhance.Contrast(im)
-#        im = enhancer.enhance(2)
-#        im = im.convert('1')
-#        im.save('temp2.jpg')
-        # load the image as a PIL/Pillow image, apply OCR, and then delete
-        # the temporary file
-   #     pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files (x86)\Tesseract-OCR\tesseract.exe'
-   #      psm=7
-        #tessdata_dir_config = '--oem 3 --psm {} --tessdata-dir "C:/Program Files (x86)/Tesseract-OCR/tessdata/"'.format(psm)
-
         text = pytesseract.image_to_string(Image.open(path_main+'/'+str(filename)),lang='eng', config=tessdata_dir_config)
-        # text
         return text
 
-def get_data(path_main,image,name0,ds=10):
+def get_data(path_main,image,name0,ds=0):
         profile_ocr={}
         profile_ocr['text']=[]
         profile_ocr['text'].append({}) 
@@ -267,7 +312,9 @@ def get_data(path_main,image,name0,ds=10):
         path_logo = os.path.join(path_main, "croped_img_300/")
         # path_img="./static/img/croped_img_300/"
         path_img = os.path.join(path_main, "croped_img_300/")
-
+        image_path=path_json+'main.jpg'
+        status = cv2.imwrite(path_json+'main.jpg',image)
+        print("Image written to file-system : ",status)
         
         file_json=name0.replace('jpg','json')
         file_json=path_json+file_json
@@ -282,45 +329,40 @@ def get_data(path_main,image,name0,ds=10):
         scale_w=(w1/w0)
         scale_h=(h1/h0)
         
+        
+
+
+
+        
         with open(file_json) as datafile:
                 data = json.load(datafile)
+        rwd_list=ocr_google(image_path)
         
-#        img_rgb = cv2.imread(fileImg)
-                        #
-        #print(data)
-        title = data['title']
-        print('title   :',title)
-        x_start,y_start,x_end,y_end,rotate=get_rect(title)        
-#        img_title=cv2.rectangle(image, (int(x_start*scale_w), int(y_start*scale_h)), (int(x_end*scale_w), int(y_end*scale_h)), (0, 255, 0), 7)
+        label=data['title']  
+        x_start,y_start,x_end,y_end,rotate=get_rect_2(label,scale_h,scale_w) 
+        ra_logo = Rectangle(x_start,y_start,x_end,y_end)
+        title_text=text_field(ra_logo,rwd_list)
+        print('title_text=',title_text)
         img_title=image[int(y_start*scale_h+ds):int(y_end*scale_h),int(x_start*scale_w):int(x_end*scale_w)]
         cv2.imwrite(path_main+'/title.jpg',img_title)
-#        imgplot = plt.imshow(img_title)
-#        plt.show()
-        title_text=ocr(img_title,path_main,6)
-        print('title_text=',title_text)
 
-        drawingN=data['project_number']
-        x_start,y_start,x_end,y_end,rotate=get_rect(drawingN)
-#        img_drawingN=cv2.rectangle(img_rgb, (x_start*scale_w, y_start*scale_h), (x_end*scale_w, y_end*scale_h), (0, 0, 255), 2)
+        label=data['project_number']  
+        x_start,y_start,x_end,y_end,rotate=get_rect_2(label,scale_h,scale_w) 
+        ra_logo = Rectangle(x_start,y_start,x_end,y_end)
+        drawingN_text=text_field(ra_logo,rwd_list)
+        print('img_drawingN=',drawingN_text)
         img_drawingN=image[int(y_start*scale_h+ds):int(y_end*scale_h),int(x_start*scale_w):int(x_end*scale_w)]
         cv2.imwrite(path_main+'/drawing_number.jpg',img_drawingN)
-
-
-        drawingN_text=ocr(img_drawingN,path_main,8)
-        print('img_drawingN=',drawingN_text)
-
-
         
-        revsion=data['revsion']
-        x_start,y_start,x_end,y_end,rotate=get_rect(revsion)        
-#        img_revsion=cv2.rectangle(img_rgb, (x_start*scale_w, y_start*scale_h), (x_end*scale_w, y_end*scale_h), (0, 0, 255), 2)
+        label=data['revsion']
+        x_start,y_start,x_end,y_end,rotate=get_rect_2(label,scale_h,scale_w) 
+        ra_logo = Rectangle(x_start,y_start,x_end,y_end)
+        revsion_text=text_field(ra_logo,rwd_list)
+        print('revsion =',revsion_text)
         img_revsion=image[int(y_start*scale_h+ds):int(y_end*scale_h),int(x_start*scale_w):int(x_end*scale_w)]
         cv2.imwrite(path_main+'/revision.jpg',img_revsion)
-
-
-        revsion_text=ocr(img_revsion,path_main,8)
-        print('img_revsion=',revsion_text)
-
+        
+        
         profile_ocr['text'][0]['Title']=title_text
         profile_ocr['text'][0]['drawingN']=drawingN_text
         profile_ocr['text'][0]['revsion']=revsion_text
